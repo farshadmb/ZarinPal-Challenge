@@ -12,7 +12,6 @@
 		C3AF596A478FF49881895C5E /* Pods_ZarinPal_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212768EA85C2BD99963F3575 /* Pods_ZarinPal_Challenge.framework */; };
 		F82103BB2499697B00B1A211 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103BA2499697B00B1A211 /* AppDelegate.swift */; };
 		F82103BD2499697B00B1A211 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103BC2499697B00B1A211 /* SceneDelegate.swift */; };
-		F82103BF2499697B00B1A211 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103BE2499697B00B1A211 /* ContentView.swift */; };
 		F82103C12499697D00B1A211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82103C02499697D00B1A211 /* Assets.xcassets */; };
 		F82103C42499697D00B1A211 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82103C32499697D00B1A211 /* Preview Assets.xcassets */; };
 		F82103C72499697D00B1A211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82103C52499697D00B1A211 /* LaunchScreen.storyboard */; };
@@ -50,7 +49,6 @@
 		F82103B72499697B00B1A211 /* ZarinPal-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZarinPal-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82103BA2499697B00B1A211 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F82103BC2499697B00B1A211 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F82103BE2499697B00B1A211 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F82103C02499697D00B1A211 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F82103C32499697D00B1A211 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F82103C62499697D00B1A211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -141,9 +139,9 @@
 		F82103B92499697B00B1A211 /* ZarinPal-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				F875B8D024996B420052C1DC /* Views */,
 				F82103BA2499697B00B1A211 /* AppDelegate.swift */,
 				F82103BC2499697B00B1A211 /* SceneDelegate.swift */,
-				F82103BE2499697B00B1A211 /* ContentView.swift */,
 				F82103C02499697D00B1A211 /* Assets.xcassets */,
 				F82103C52499697D00B1A211 /* LaunchScreen.storyboard */,
 				F82103C82499697D00B1A211 /* Info.plist */,
@@ -184,6 +182,13 @@
 				F875B8CF24996ABE0052C1DC /* AppSwiftUIPreviewer.playground */,
 			);
 			path = Playgrounds;
+			sourceTree = "<group>";
+		};
+		F875B8D024996B420052C1DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,7 +396,6 @@
 			files = (
 				F82103BB2499697B00B1A211 /* AppDelegate.swift in Sources */,
 				F82103BD2499697B00B1A211 /* SceneDelegate.swift in Sources */,
-				F82103BF2499697B00B1A211 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
