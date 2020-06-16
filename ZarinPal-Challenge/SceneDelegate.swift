@@ -20,7 +20,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = AuthenticationView()
+        var items = [RespositoryData]()
+
+        for i in 0...20 {
+            
+            let respository = RespositoryData(title: "Repo Name \(i)", description: i % 2 == 0 ? nil : "Repo Desc")
+            items.append(respository)
+        }
+        
+        let contentView = UserRepositoryListView(items: items)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
