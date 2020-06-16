@@ -61,6 +61,7 @@
 		F82103D82499697D00B1A211 /* ZarinPal-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZarinPal-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82103DC2499697D00B1A211 /* ZarinPal_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZarinPal_ChallengeUITests.swift; sourceTree = "<group>"; };
 		F82103DE2499697D00B1A211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F875B8CF24996ABE0052C1DC /* AppSwiftUIPreviewer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AppSwiftUIPreviewer.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +102,6 @@
 				6AD88D0CDD3BB030A96991E5 /* Pods-ZarinPal-ChallengeTests.debug.xcconfig */,
 				5D53BEFB29F18DA61ACA24E1 /* Pods-ZarinPal-ChallengeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -118,6 +118,7 @@
 		F82103AE2499697B00B1A211 = {
 			isa = PBXGroup;
 			children = (
+				F875B8CE24996A830052C1DC /* Playgrounds */,
 				F82103B92499697B00B1A211 /* ZarinPal-Challenge */,
 				F82103D02499697D00B1A211 /* ZarinPal-ChallengeTests */,
 				F82103DB2499697D00B1A211 /* ZarinPal-ChallengeUITests */,
@@ -175,6 +176,14 @@
 				F82103DE2499697D00B1A211 /* Info.plist */,
 			);
 			path = "ZarinPal-ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		F875B8CE24996A830052C1DC /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				F875B8CF24996ABE0052C1DC /* AppSwiftUIPreviewer.playground */,
+			);
+			path = Playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
