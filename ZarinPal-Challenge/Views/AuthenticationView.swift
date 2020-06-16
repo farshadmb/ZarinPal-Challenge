@@ -1,9 +1,12 @@
-//: [Previous](@previous)
+//
+//  AuthenticationView.swift
+//  ZarinPal-Challenge
+//
+//  Created by Farshad Mousalou on 6/17/20.
+//  Copyright © 2020 Farshad Mousalou. All rights reserved.
+//
 
-import PlaygroundSupport
 import SwiftUI
-import Combine
-import UIKit
 
 struct AuthenticationView: View  {
     
@@ -36,9 +39,8 @@ struct AuthenticationView: View  {
     }
 }
 
-let view = AuthenticationView()
-
-// Present the view controller in the Live View window
-PlaygroundPage.current.setLiveView(view)
-PlaygroundPage.current.needsIndefiniteExecution = true
-//: [Next](@next)
+struct AuthenticationView_Previews: PreviewProvider {
+    static var previews: some View {
+        AuthenticationView()
+    }
+}
