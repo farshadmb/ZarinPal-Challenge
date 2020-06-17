@@ -733,7 +733,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ZarinPal-Challenge/Preview Content\"";
-				DEVELOPMENT_TEAM = 638B4QA28J;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "ZarinPal-Challenge/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -755,7 +755,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ZarinPal-Challenge/Preview Content\"";
-				DEVELOPMENT_TEAM = 638B4QA28J;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "ZarinPal-Challenge/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
