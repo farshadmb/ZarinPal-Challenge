@@ -1,3 +1,38 @@
-PODFILE CHECKSUM: 76fa47e3580de9df404b88cc7b7494f0515bcaa6
+PODS:
+  - Alamofire (5.2.1)
+  - KeychainAccess (4.2.0)
+  - Kingfisher (5.14.0):
+    - Kingfisher/Core (= 5.14.0)
+  - Kingfisher/Core (5.14.0)
+  - RxAlamofire (5.3.2):
+    - RxAlamofire/Core (= 5.3.2)
+  - RxAlamofire/Core (5.3.2):
+    - Alamofire (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxSwift (5.1.1)
 
-COCOAPODS: 1.9.0
+DEPENDENCIES:
+  - Alamofire
+  - KeychainAccess
+  - Kingfisher
+  - RxAlamofire
+  - RxSwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KeychainAccess
+    - Kingfisher
+    - RxAlamofire
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  KeychainAccess: 3f760109aa99b05d0f231e28b22642da7153e38a
+  Kingfisher: 7b64389a43139c903ec434788344c288217c792d
+  RxAlamofire: 9234f30d94bfae9889c2aaba36358312083a7ad3
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+
+PODFILE CHECKSUM: 407d4b8608220ca0dc21b142869a638ea0e71b19
+
+COCOAPODS: 1.9.3
