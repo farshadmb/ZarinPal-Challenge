@@ -31,6 +31,17 @@ final class APIClient: NetworkServiceInterceptable {
         return decoder
     }())
     
+    static var instance : APIClient {
+        return APIClient(baseURL: AppConfig.baseURL,
+                         session: SessionManager(),
+                         queue: .networkResponseQueue,
+                         decoder: {
+                            let decoder = JSONDecoder()
+                            decoder.dateDecodingStrategy = .iso8601
+                            return decoder
+        }())
+    }
+    
     /// <#Description#>
     let baseURL: URL
     
@@ -105,7 +116,7 @@ final class APIClient: NetworkServiceInterceptable {
         return map(dataRequest: dataRequest, decoder: decoder)
     }
     
-    func executerRequest<T, P>(endpoint: INetworkServiceEndpoint,
+    func executeRequest<T, P>(endpoint: INetworkServiceEndpoint,
                                parameter: P,
                                headers: NetworkHeadersType) -> Observable<Result<T, Error>> where T : Decodable, P : Encodable {
         

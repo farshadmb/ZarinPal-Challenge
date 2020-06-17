@@ -48,7 +48,7 @@ protocol NetworkService {
     ///   - parameter: <#parameter description#>
     ///   - method: <#method description#>
     ///   - headers: <#headers description#>
-    func executerRequest<T: Decodable,P: Encodable>(endpoint: INetworkServiceEndpoint,
+    func executeRequest<T: Decodable,P: Encodable>(endpoint: INetworkServiceEndpoint,
                                                     parameter: P, headers: NetworkHeadersType) -> Observable<ResponseResult<T>>
     
 }
@@ -63,17 +63,17 @@ protocol NetworkServiceInterceptable: NetworkService {
 
 extension NetworkService {
     
-    func executerRequest<T: Decodable>(endpoint: INetworkServiceEndpoint,
+    func executeRequest<T: Decodable>(endpoint: INetworkServiceEndpoint,
                                        query:IGraphQLQueryRequest, headers:NetworkHeadersType) -> Observable<ResponseResult<T>> {
         return .empty()
     }
     
-    func executerRequest<T: Decodable>(endpoint: INetworkServiceEndpoint,
+    func executeRequest<T: Decodable>(endpoint: INetworkServiceEndpoint,
                                        parameters: Parameters, method: HTTPMethod, headers: NetworkHeadersType) -> Observable<ResponseResult<T>> {
         return .empty()
     }
     
-    func executerRequest<T: Decodable,P: Encodable>(endpoint:INetworkServiceEndpoint,
+    func executeRequest<T: Decodable,P: Encodable>(endpoint:INetworkServiceEndpoint,
                                                     parameter: P, headers: NetworkHeadersType) -> Observable<ResponseResult<T>> {
         return .empty()
     }

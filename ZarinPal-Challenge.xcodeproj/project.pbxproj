@@ -26,6 +26,13 @@
 		F85513C9249A04F4006F309D /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513C8249A04F4006F309D /* Storable.swift */; };
 		F85513CB249A04FD006F309D /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513CA249A04FD006F309D /* Storage.swift */; };
 		F85513CD249A06E9006F309D /* KeyChainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513CC249A06E9006F309D /* KeyChainStorage.swift */; };
+		F85513CF249A0F7F006F309D /* OAuthCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513CE249A0F7F006F309D /* OAuthCredential.swift */; };
+		F85513D1249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D0249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift */; };
+		F85513D3249A126D006F309D /* AuthenticationService+Authentictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D2249A126D006F309D /* AuthenticationService+Authentictor.swift */; };
+		F85513D5249A1436006F309D /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D4249A1436006F309D /* Authentication.swift */; };
+		F85513D7249A162D006F309D /* AppClientCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D6249A162D006F309D /* AppClientCredential.swift */; };
+		F85513D9249A2660006F309D /* XCAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D8249A2660006F309D /* XCAuthenticationService.swift */; };
+		F85513DB249A2697006F309D /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513DA249A2697006F309D /* AuthenticationService.swift */; };
 		F87C13F424997779002170B9 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C13F324997779002170B9 /* AuthenticationView.swift */; };
 		F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */; };
 		F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */; };
@@ -85,6 +92,13 @@
 		F85513C8249A04F4006F309D /* Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
 		F85513CA249A04FD006F309D /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		F85513CC249A06E9006F309D /* KeyChainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainStorage.swift; sourceTree = "<group>"; };
+		F85513CE249A0F7F006F309D /* OAuthCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthCredential.swift; sourceTree = "<group>"; };
+		F85513D0249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OAuthCredential+AuthenticationCredential.swift"; sourceTree = "<group>"; };
+		F85513D2249A126D006F309D /* AuthenticationService+Authentictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationService+Authentictor.swift"; sourceTree = "<group>"; };
+		F85513D4249A1436006F309D /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		F85513D6249A162D006F309D /* AppClientCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClientCredential.swift; sourceTree = "<group>"; };
+		F85513D8249A2660006F309D /* XCAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCAuthenticationService.swift; sourceTree = "<group>"; };
+		F85513DA249A2697006F309D /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		F87C13F324997779002170B9 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryListView.swift; sourceTree = "<group>"; };
 		F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryRowView.swift; sourceTree = "<group>"; };
@@ -199,6 +213,7 @@
 			children = (
 				F82103D12499697D00B1A211 /* ZarinPal_ChallengeTests.swift */,
 				F82103D32499697D00B1A211 /* Info.plist */,
+				F85513D8249A2660006F309D /* XCAuthenticationService.swift */,
 			);
 			path = "ZarinPal-ChallengeTests";
 			sourceTree = "<group>";
@@ -232,6 +247,11 @@
 		F85513BA2499E34F006F309D /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				F85513D4249A1436006F309D /* Authentication.swift */,
+				F85513DA249A2697006F309D /* AuthenticationService.swift */,
+				F85513D2249A126D006F309D /* AuthenticationService+Authentictor.swift */,
+				F85513CE249A0F7F006F309D /* OAuthCredential.swift */,
+				F85513D0249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -250,6 +270,7 @@
 		F85513C22499ED50006F309D /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				F85513D6249A162D006F309D /* AppClientCredential.swift */,
 				F85513C32499ED5B006F309D /* AppConfig.swift */,
 			);
 			path = Constant;
@@ -521,20 +542,26 @@
 			files = (
 				F8E588922499B33F0083BD93 /* UserRepositoryPullRequestListView.swift in Sources */,
 				F8E588902499B3290083BD93 /* UserRepositoryIssueListView.swift in Sources */,
+				F85513DB249A2697006F309D /* AuthenticationService.swift in Sources */,
 				F85513BF2499E5F6006F309D /* IGraphQLQueryRequest.swift in Sources */,
 				F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */,
 				F8E5888C2499A3070083BD93 /* UserRepositoryDetailView.swift in Sources */,
+				F85513D3249A126D006F309D /* AuthenticationService+Authentictor.swift in Sources */,
 				F85513CB249A04FD006F309D /* Storage.swift in Sources */,
 				F85513C12499EC0C006F309D /* APIClientService.swift in Sources */,
+				F85513D5249A1436006F309D /* Authentication.swift in Sources */,
 				F85513C42499ED5B006F309D /* AppConfig.swift in Sources */,
 				F82103BB2499697B00B1A211 /* AppDelegate.swift in Sources */,
+				F85513D1249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift in Sources */,
 				F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */,
 				F82103BD2499697B00B1A211 /* SceneDelegate.swift in Sources */,
 				F84D0AC62499BD0600B88CA0 /* UserProfileView.swift in Sources */,
+				F85513D7249A162D006F309D /* AppClientCredential.swift in Sources */,
 				F8E5888E2499B3130083BD93 /* UserRepositoryBranchListView.swift in Sources */,
 				F87C13F424997779002170B9 /* AuthenticationView.swift in Sources */,
 				F85513CD249A06E9006F309D /* KeyChainStorage.swift in Sources */,
 				F85513C9249A04F4006F309D /* Storable.swift in Sources */,
+				F85513CF249A0F7F006F309D /* OAuthCredential.swift in Sources */,
 				F85513C62499F71B006F309D /* INetworkServiceEndpoint.swift in Sources */,
 				F85513BD2499E566006F309D /* NetworkService.swift in Sources */,
 				F8CF16C524998FBD00464F90 /* RepositoryData.swift in Sources */,
@@ -545,6 +572,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85513D9249A2660006F309D /* XCAuthenticationService.swift in Sources */,
 				F82103D22499697D00B1A211 /* ZarinPal_ChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

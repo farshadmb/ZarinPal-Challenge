@@ -14,3 +14,11 @@ protocol INetworkServiceEndpoint {
     /// <#Description#>
     var path : String { get }
 }
+
+extension String: INetworkServiceEndpoint {
+    var path: String {
+        return self
+    }
+}
+
+extension URL: INetworkServiceEndpoint {}
