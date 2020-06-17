@@ -1,10 +1,12 @@
-//: [Previous](@previous)
+//
+//  UserProfileView.swift
+//  ZarinPal-Challenge
+//
+//  Created by Farshad Mousalou on 6/17/20.
+//  Copyright © 2020 Farshad Mousalou. All rights reserved.
+//
 
-
-import Foundation
 import SwiftUI
-import UIKit
-import PlaygroundSupport
 
 struct UserProfileView: View {
     var body: some View {
@@ -19,8 +21,8 @@ struct UserProfileView: View {
                 UserProfileDetailRowView()
             }
             .padding()
-            Spacer()
         }
+        .navigationBarTitle("Profile")
     }
 }
 
@@ -74,10 +76,9 @@ struct UserProfileDetailRowView : View {
     }
     
 }
-let view = UserProfileView()
 
-// Present the view controller in the Live View window
-PlaygroundPage.current.setLiveView(view)
-PlaygroundPage.current.needsIndefiniteExecution = true
-
-//: [Next](@next)
+struct UserProfileView_Previews: PreviewProvider {
+    static var previews: some View {
+        UserProfileView()
+    }
+}

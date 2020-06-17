@@ -67,7 +67,7 @@ struct RepositoryDetailView : View {
     func buildListView(items : [String]) -> some View {
         var items = items
         if items.isEmpty {
-            items = Array(repeating: self.mode.rawValue, count: 20
+            items = Array(repeating: self.mode.rawValue, count: 20)
         }
         
         switch self.mode {

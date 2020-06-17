@@ -11,19 +11,28 @@ import SwiftUI
 struct UserRepositoryListView: View  {
     
     var items : [RepositoryData]
+    @State private var selectProfile : Bool = false
     var body : some View {
         
         NavigationView {
-            List(items) { item in
-                NavigationLink(destination: UserRepositoryDetailView(data:item)) {
-                    UserRepositoryRowView(repository: item)
+            Group {
+                NavigationLink(destination: UserProfileView(),isActive: self.$selectProfile) {
+                    EmptyView()
+                }
+                .hidden().frame(width: 0, height: 0, alignment: .center)
+                List(items) { item in
+                    NavigationLink(destination: UserRepositoryDetailView(data:item)) {
+                        UserRepositoryRowView(repository: item)
+                    }
                 }
             }
             .navigationViewStyle(StackNavigationViewStyle())
-            .navigationBarTitle("Repositories")
-            .navigationBarItems(trailing:  NavigationLink(destination: EmptyView()) {
-                       Image(systemName: "person.circle")
-                   }.accentColor(.green))
+            .navigationBarTitle(Text("Repositories"))
+            .navigationBarItems(trailing:Button.init(action: {
+                self.selectProfile.toggle()
+            }, label: {
+                Image(systemName: "person.circle").renderingMode(.template).accentColor(.green)
+            }))
         }
         
     }
@@ -32,7 +41,9 @@ struct UserRepositoryListView: View  {
 
 struct TempView : View {
     var body: some View {
-        Text("Hello View")
+        NavigationLink(destination: UserProfileView()) {
+            Image(systemName: "person.circle").accentColor(.green)
+        }
     }
 }
 
