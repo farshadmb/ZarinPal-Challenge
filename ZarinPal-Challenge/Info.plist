@@ -25,7 +25,7 @@
 			<string>com.ifashad.github-callback</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>zp-challenge://</string>
+				<string>zp-challenge</string>
 			</array>
 		</dict>
 	</array>

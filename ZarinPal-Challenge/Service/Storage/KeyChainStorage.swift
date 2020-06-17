@@ -18,7 +18,7 @@ struct KeyChainStorage: SecureStorage {
     private var keychain : Keychain
     
     init(supportsSecureStore: Bool, keychain : Keychain = Keychain(server: serviceName, protocolType: .https)) {
-        self.keychain = keychain
+        self.keychain = keychain.synchronizable(true)
         self.supportsSecureStore = supportsSecureStore
     }
     
@@ -33,6 +33,7 @@ struct KeyChainStorage: SecureStorage {
             }
             
             try keychain.set(data, key: key)
+            
             return true
         }catch let error {
             print("#function ->",error)

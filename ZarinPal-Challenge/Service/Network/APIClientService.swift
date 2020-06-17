@@ -124,11 +124,13 @@ final class APIClient: NetworkServiceInterceptable {
                let dataRequest = session.request(attachBaseURL(into: endpoint),
                                                  method: .post,
                                                  parameters: parameter,
-                                                 encoder: JSONParameterEncoder.default,
+                                                 encoder: JSONParameterEncoder.prettyPrinted,
                                                  headers: HTTPHeaders(headers),
                                                  interceptor: interceptor)
                    .validate()
-               
+                .responseString { (response) in
+                    print(try? response.result.get())
+        }
                return map(dataRequest: dataRequest, decoder: decoder)
     }
     

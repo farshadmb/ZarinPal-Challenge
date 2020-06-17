@@ -67,9 +67,15 @@ final class AuthenticationService : AuthenticationInterceptable {
     func requestAccessToken(with code: String, client credential: AppClientCredential) -> Observable<Bool> {
         
         let endpoint = "https://github.com/login/oauth/access_token"
+        let newCredential = AppClientCredential(id: credential.id,
+                                            secret: credential.secret,
+                                            scope: credential.scope, state: credential.state,
+                                            redirectURL: credential.redirectURL, code: code)
+        
         let source = networkService.executeRequest(endpoint: endpoint,
-                                                   parameter:credential,
-                                                   headers: [:])
+                                                   parameter:newCredential,
+                                                   headers: ["Accept":"application/json"])
+            
             .map { (value: Result<OAuthCredential,Error>) -> OAuthCredential in
                 switch value {
                 case .success(let mapped):
@@ -87,7 +93,7 @@ final class AuthenticationService : AuthenticationInterceptable {
     private func save(tokenInfo: OAuthCredential) -> Bool {
         internalRequestInterceptor.credential = tokenInfo
         authenticated.onNext(true)
-        return self.storage.store(object: tokenInfo, forKey: "credentialKey")
+        return self.storage.store(object: tokenInfo, forKey: credentialKey)
     }
     
     private func loadCredentialFromDisk() -> OAuthCredential? {

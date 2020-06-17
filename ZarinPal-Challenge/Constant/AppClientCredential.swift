@@ -23,6 +23,7 @@ struct AppClientCredential: Encodable, GitClientCredential {
     var scope: String
     var state: Int
     var redirectURL: String
+    var code: String? = nil
     
     enum CodingKeys: String, CodingKey {
         case id = "client_id"
@@ -30,6 +31,7 @@ struct AppClientCredential: Encodable, GitClientCredential {
         case scope
         case state
         case redirectURL = "redirect_url"
+        case code
     }
     
 }
