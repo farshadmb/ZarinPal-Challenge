@@ -12,12 +12,20 @@
 		C3AF596A478FF49881895C5E /* Pods_ZarinPal_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212768EA85C2BD99963F3575 /* Pods_ZarinPal_Challenge.framework */; };
 		F82103BB2499697B00B1A211 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103BA2499697B00B1A211 /* AppDelegate.swift */; };
 		F82103BD2499697B00B1A211 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103BC2499697B00B1A211 /* SceneDelegate.swift */; };
-		F82103BF2499697B00B1A211 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103BE2499697B00B1A211 /* ContentView.swift */; };
 		F82103C12499697D00B1A211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82103C02499697D00B1A211 /* Assets.xcassets */; };
 		F82103C42499697D00B1A211 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82103C32499697D00B1A211 /* Preview Assets.xcassets */; };
 		F82103C72499697D00B1A211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82103C52499697D00B1A211 /* LaunchScreen.storyboard */; };
 		F82103D22499697D00B1A211 /* ZarinPal_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103D12499697D00B1A211 /* ZarinPal_ChallengeTests.swift */; };
 		F82103DD2499697D00B1A211 /* ZarinPal_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103DC2499697D00B1A211 /* ZarinPal_ChallengeUITests.swift */; };
+		F84D0AC62499BD0600B88CA0 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D0AC52499BD0600B88CA0 /* UserProfileView.swift */; };
+		F87C13F424997779002170B9 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C13F324997779002170B9 /* AuthenticationView.swift */; };
+		F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */; };
+		F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */; };
+		F8CF16C524998FBD00464F90 /* RepositoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF16C424998FBD00464F90 /* RepositoryData.swift */; };
+		F8E5888C2499A3070083BD93 /* UserRepositoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */; };
+		F8E5888E2499B3130083BD93 /* UserRepositoryBranchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */; };
+		F8E588902499B3290083BD93 /* UserRepositoryIssueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */; };
+		F8E588922499B33F0083BD93 /* UserRepositoryPullRequestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E588912499B33F0083BD93 /* UserRepositoryPullRequestListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +58,6 @@
 		F82103B72499697B00B1A211 /* ZarinPal-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZarinPal-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82103BA2499697B00B1A211 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F82103BC2499697B00B1A211 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F82103BE2499697B00B1A211 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F82103C02499697D00B1A211 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F82103C32499697D00B1A211 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F82103C62499697D00B1A211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +68,15 @@
 		F82103D82499697D00B1A211 /* ZarinPal-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZarinPal-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82103DC2499697D00B1A211 /* ZarinPal_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZarinPal_ChallengeUITests.swift; sourceTree = "<group>"; };
 		F82103DE2499697D00B1A211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F875B8CF24996ABE0052C1DC /* AppSwiftUIPreviewer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AppSwiftUIPreviewer.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F84D0AC52499BD0600B88CA0 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		F87C13F324997779002170B9 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryListView.swift; sourceTree = "<group>"; };
+		F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryRowView.swift; sourceTree = "<group>"; };
+		F8CF16C424998FBD00464F90 /* RepositoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryData.swift; sourceTree = "<group>"; };
+		F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryDetailView.swift; sourceTree = "<group>"; };
+		F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryBranchListView.swift; sourceTree = "<group>"; };
+		F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryIssueListView.swift; sourceTree = "<group>"; };
+		F8E588912499B33F0083BD93 /* UserRepositoryPullRequestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryPullRequestListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +133,6 @@
 		F82103AE2499697B00B1A211 = {
 			isa = PBXGroup;
 			children = (
-				F875B8CE24996A830052C1DC /* Playgrounds */,
 				F82103B92499697B00B1A211 /* ZarinPal-Challenge */,
 				F82103D02499697D00B1A211 /* ZarinPal-ChallengeTests */,
 				F82103DB2499697D00B1A211 /* ZarinPal-ChallengeUITests */,
@@ -141,13 +155,14 @@
 		F82103B92499697B00B1A211 /* ZarinPal-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				F875B8D024996B420052C1DC /* Views */,
 				F82103BA2499697B00B1A211 /* AppDelegate.swift */,
 				F82103BC2499697B00B1A211 /* SceneDelegate.swift */,
-				F82103BE2499697B00B1A211 /* ContentView.swift */,
 				F82103C02499697D00B1A211 /* Assets.xcassets */,
 				F82103C52499697D00B1A211 /* LaunchScreen.storyboard */,
 				F82103C82499697D00B1A211 /* Info.plist */,
 				F82103C22499697D00B1A211 /* Preview Content */,
+				F8CF16C424998FBD00464F90 /* RepositoryData.swift */,
 			);
 			path = "ZarinPal-Challenge";
 			sourceTree = "<group>";
@@ -178,12 +193,19 @@
 			path = "ZarinPal-ChallengeUITests";
 			sourceTree = "<group>";
 		};
-		F875B8CE24996A830052C1DC /* Playgrounds */ = {
+		F875B8D024996B420052C1DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F875B8CF24996ABE0052C1DC /* AppSwiftUIPreviewer.playground */,
+				F87C13F324997779002170B9 /* AuthenticationView.swift */,
+				F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */,
+				F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */,
+				F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */,
+				F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */,
+				F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */,
+				F8E588912499B33F0083BD93 /* UserRepositoryPullRequestListView.swift */,
+				F84D0AC52499BD0600B88CA0 /* UserProfileView.swift */,
 			);
-			path = Playgrounds;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,9 +411,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E588922499B33F0083BD93 /* UserRepositoryPullRequestListView.swift in Sources */,
+				F8E588902499B3290083BD93 /* UserRepositoryIssueListView.swift in Sources */,
+				F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */,
+				F8E5888C2499A3070083BD93 /* UserRepositoryDetailView.swift in Sources */,
 				F82103BB2499697B00B1A211 /* AppDelegate.swift in Sources */,
+				F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */,
 				F82103BD2499697B00B1A211 /* SceneDelegate.swift in Sources */,
-				F82103BF2499697B00B1A211 /* ContentView.swift in Sources */,
+				F84D0AC62499BD0600B88CA0 /* UserProfileView.swift in Sources */,
+				F8E5888E2499B3130083BD93 /* UserRepositoryBranchListView.swift in Sources */,
+				F87C13F424997779002170B9 /* AuthenticationView.swift in Sources */,
+				F8CF16C524998FBD00464F90 /* RepositoryData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +592,7 @@
 				DEVELOPMENT_TEAM = 638B4QA28J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "ZarinPal-Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -583,6 +614,7 @@
 				DEVELOPMENT_TEAM = 638B4QA28J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "ZarinPal-Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

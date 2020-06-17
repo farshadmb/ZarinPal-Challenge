@@ -20,7 +20,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        var items = [RepositoryData]()
+        let fakeBranche = RepositoryData.BranchData(title: "Branch", createdDate: Date(timeIntervalSinceNow: -100), updateDate: Date())
+        let fakeIssue = RepositoryData.IssueData(number: "1", title: "Issue", date: Date(timeIntervalSinceNow: -50), description: "Issue Description")
+        let fakePR = RepositoryData.PullRequestData(number: "#2", title: "Issue", date: Date(timeIntervalSinceNow: -40), description: "PR Description")
+        
+        for i in 0...20 {
+            
+            var respository = RepositoryData(title: "Repo Name \(i)", description: i % 2 == 0 ? nil : "Repo Desc")
+            respository.branches = i % 3 == 0 ? Array(repeating:fakeBranche , count: 5) : []
+            respository.pullRequests = i % 4 == 0 ? Array(repeating: fakePR, count: 5) : []
+            respository.issues = i % 5 == 0 ? Array(repeating: fakeIssue, count: 5) : []
+            
+            items.append(respository)
+        }
+        
+        let contentView = UserRepositoryListView(items: items)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
