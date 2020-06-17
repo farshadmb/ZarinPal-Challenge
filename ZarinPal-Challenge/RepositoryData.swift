@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-struct RespositoryData: Identifiable {
+struct RepositoryData: Identifiable {
     
     var id: String {
         return title
@@ -17,5 +17,48 @@ struct RespositoryData: Identifiable {
     
     var title: String
     var description: String?
+    
+    var branches: [BranchData] = []
+    var pullRequestList: [PullRequestData] = []
+    var issues: [IssueData] = []
+}
+
+extension RepositoryData {
+    
+    struct PullRequestData : Identifiable {
+        
+        var id : String {
+            return number
+        }
+        
+        var number: String
+        var title: String
+        var date: Date
+        var description: String
+        
+    }
+    
+    struct BranchData: Identifiable {
+        
+        var id: String {
+            return title
+        }
+        
+        var title: String
+        var createdDate: Date
+        var updateDate: Date
+    }
+    
+    struct IssueData: Identifiable {
+           
+           var id: String {
+               return number
+           }
+           
+        var number: String
+        var title: String
+        var date: Date
+        var description: String
+       }
     
 }

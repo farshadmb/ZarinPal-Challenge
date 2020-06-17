@@ -10,7 +10,7 @@ import SwiftUI
 
 struct UserRepositoryRowView: View {
     
-    var repository : RespositoryData
+    var repository : RepositoryData
     var body: some View {
         
         VStack(alignment: .leading, spacing: 8) {
@@ -29,6 +29,6 @@ struct UserRepositoryRowView: View {
 
 struct UserRepositoryRowView_Previews: PreviewProvider {
     static var previews: some View {
-        UserRepositoryRowView(repository: RespositoryData(title:"",description: nil))
+        UserRepositoryRowView(repository: RepositoryData(title:"",description: nil))
     }
 }

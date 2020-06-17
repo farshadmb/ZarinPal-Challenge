@@ -10,7 +10,7 @@ import SwiftUI
 
 struct UserRepositoryListView: View  {
     
-    var items : [RespositoryData]
+    var items : [RepositoryData]
     var body : some View {
         
         NavigationView {

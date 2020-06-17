@@ -16,7 +16,7 @@ struct UserRepositoryDetailView: View {
         case pullRequest = "Pull Request"
     }
     
-    @State var data: RespositoryData
+    @State var data: RepositoryData
     @State var mode : ViewMode = .branch
     
     var body: some View {

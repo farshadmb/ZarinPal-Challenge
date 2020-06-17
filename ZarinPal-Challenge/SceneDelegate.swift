@@ -20,11 +20,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        var items = [RespositoryData]()
+        var items = [RepositoryData]()
 
         for i in 0...20 {
             
-            let respository = RespositoryData(title: "Repo Name \(i)", description: i % 2 == 0 ? nil : "Repo Desc")
+            let respository = RepositoryData(title: "Repo Name \(i)", description: i % 2 == 0 ? nil : "Repo Desc")
             items.append(respository)
         }
         
