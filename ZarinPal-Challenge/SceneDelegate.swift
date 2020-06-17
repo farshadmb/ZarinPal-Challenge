@@ -87,7 +87,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let url = URLContexts.first?.url else { return }
         
         let queryItems = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems
-        print(queryItems)
         if queryItems?.contains(where: { $0.name == "error" }) == true  {
             
             let alert = UIAlertController(title: queryItems?.first(where: { $0.name == "error" })?.value,

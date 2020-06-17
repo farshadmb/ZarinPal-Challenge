@@ -20,6 +20,6 @@ protocol Authentication {
     
 }
 
-protocol AuthenticationInterceptable : RequestInterceptor {
+protocol AuthenticationInterceptable : Authentication, RequestInterceptor {
     
 }

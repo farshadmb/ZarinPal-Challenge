@@ -10,6 +10,8 @@
 		416C5FE755E5216AED1BAF14 /* Pods_ZarinPal_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C80E9549AA99FC5A12DA87 /* Pods_ZarinPal_ChallengeTests.framework */; };
 		59524F0874BF6BC61810B7B9 /* Pods_ZarinPal_Challenge_ZarinPal_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32A2FAF08B9C369DAA373CE /* Pods_ZarinPal_Challenge_ZarinPal_ChallengeUITests.framework */; };
 		C3AF596A478FF49881895C5E /* Pods_ZarinPal_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212768EA85C2BD99963F3575 /* Pods_ZarinPal_Challenge.framework */; };
+		F80E3125249A51040092000F /* GitHubUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80E3124249A51040092000F /* GitHubUserRepository.swift */; };
+		F80E3127249A54440092000F /* GitHubUserProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80E3126249A54440092000F /* GitHubUserProfileRepository.swift */; };
 		F82103BB2499697B00B1A211 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103BA2499697B00B1A211 /* AppDelegate.swift */; };
 		F82103BD2499697B00B1A211 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103BC2499697B00B1A211 /* SceneDelegate.swift */; };
 		F82103C12499697D00B1A211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82103C02499697D00B1A211 /* Assets.xcassets */; };
@@ -33,6 +35,9 @@
 		F85513D7249A162D006F309D /* AppClientCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D6249A162D006F309D /* AppClientCredential.swift */; };
 		F85513D9249A2660006F309D /* XCAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D8249A2660006F309D /* XCAuthenticationService.swift */; };
 		F85513DB249A2697006F309D /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513DA249A2697006F309D /* AuthenticationService.swift */; };
+		F86A2117249A480A00C8AE69 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A2116249A480A00C8AE69 /* BaseRepository.swift */; };
+		F86A2119249A498C00C8AE69 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A2118249A498C00C8AE69 /* AuthenticationRepository.swift */; };
+		F86A211C249A4C4200C8AE69 /* AuthenticationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A211B249A4C4200C8AE69 /* AuthenticationStatus.swift */; };
 		F87C13F424997779002170B9 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C13F324997779002170B9 /* AuthenticationView.swift */; };
 		F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */; };
 		F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */; };
@@ -70,6 +75,8 @@
 		D4C97843DCCEF859AE752EC9 /* Pods-ZarinPal-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZarinPal-Challenge.release.xcconfig"; path = "Target Support Files/Pods-ZarinPal-Challenge/Pods-ZarinPal-Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		F2C80E9549AA99FC5A12DA87 /* Pods_ZarinPal_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZarinPal_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32A2FAF08B9C369DAA373CE /* Pods_ZarinPal_Challenge_ZarinPal_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZarinPal_Challenge_ZarinPal_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80E3124249A51040092000F /* GitHubUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserRepository.swift; sourceTree = "<group>"; };
+		F80E3126249A54440092000F /* GitHubUserProfileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserProfileRepository.swift; sourceTree = "<group>"; };
 		F82103B72499697B00B1A211 /* ZarinPal-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZarinPal-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82103BA2499697B00B1A211 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F82103BC2499697B00B1A211 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +106,9 @@
 		F85513D6249A162D006F309D /* AppClientCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClientCredential.swift; sourceTree = "<group>"; };
 		F85513D8249A2660006F309D /* XCAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCAuthenticationService.swift; sourceTree = "<group>"; };
 		F85513DA249A2697006F309D /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		F86A2116249A480A00C8AE69 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		F86A2118249A498C00C8AE69 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		F86A211B249A4C4200C8AE69 /* AuthenticationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationStatus.swift; sourceTree = "<group>"; };
 		F87C13F324997779002170B9 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryListView.swift; sourceTree = "<group>"; };
 		F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryRowView.swift; sourceTree = "<group>"; };
@@ -160,6 +170,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F80E3123249A50D50092000F /* GitHub */ = {
+			isa = PBXGroup;
+			children = (
+				F80E3124249A51040092000F /* GitHubUserRepository.swift */,
+				F80E3126249A54440092000F /* GitHubUserProfileRepository.swift */,
+			);
+			path = GitHub;
+			sourceTree = "<group>";
+		};
 		F82103AE2499697B00B1A211 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +204,7 @@
 		F82103B92499697B00B1A211 /* ZarinPal-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				F86A2115249A476900C8AE69 /* Repositories */,
 				F85513C22499ED50006F309D /* Constant */,
 				F875B8D024996B420052C1DC /* Views */,
 				F85513B92499E069006F309D /* Models */,
@@ -284,6 +304,25 @@
 				F85513CC249A06E9006F309D /* KeyChainStorage.swift */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		F86A2115249A476900C8AE69 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F80E3123249A50D50092000F /* GitHub */,
+				F86A211A249A4C2500C8AE69 /* Authentication */,
+				F86A2116249A480A00C8AE69 /* BaseRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F86A211A249A4C2500C8AE69 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F86A2118249A498C00C8AE69 /* AuthenticationRepository.swift */,
+				F86A211B249A4C4200C8AE69 /* AuthenticationStatus.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		F875B8D024996B420052C1DC /* Views */ = {
@@ -545,6 +584,7 @@
 				F85513DB249A2697006F309D /* AuthenticationService.swift in Sources */,
 				F85513BF2499E5F6006F309D /* IGraphQLQueryRequest.swift in Sources */,
 				F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */,
+				F86A211C249A4C4200C8AE69 /* AuthenticationStatus.swift in Sources */,
 				F8E5888C2499A3070083BD93 /* UserRepositoryDetailView.swift in Sources */,
 				F85513D3249A126D006F309D /* AuthenticationService+Authentictor.swift in Sources */,
 				F85513CB249A04FD006F309D /* Storage.swift in Sources */,
@@ -552,7 +592,9 @@
 				F85513D5249A1436006F309D /* Authentication.swift in Sources */,
 				F85513C42499ED5B006F309D /* AppConfig.swift in Sources */,
 				F82103BB2499697B00B1A211 /* AppDelegate.swift in Sources */,
+				F86A2119249A498C00C8AE69 /* AuthenticationRepository.swift in Sources */,
 				F85513D1249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift in Sources */,
+				F80E3127249A54440092000F /* GitHubUserProfileRepository.swift in Sources */,
 				F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */,
 				F82103BD2499697B00B1A211 /* SceneDelegate.swift in Sources */,
 				F84D0AC62499BD0600B88CA0 /* UserProfileView.swift in Sources */,
@@ -563,7 +605,9 @@
 				F85513C9249A04F4006F309D /* Storable.swift in Sources */,
 				F85513CF249A0F7F006F309D /* OAuthCredential.swift in Sources */,
 				F85513C62499F71B006F309D /* INetworkServiceEndpoint.swift in Sources */,
+				F80E3125249A51040092000F /* GitHubUserRepository.swift in Sources */,
 				F85513BD2499E566006F309D /* NetworkService.swift in Sources */,
+				F86A2117249A480A00C8AE69 /* BaseRepository.swift in Sources */,
 				F8CF16C524998FBD00464F90 /* RepositoryData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
