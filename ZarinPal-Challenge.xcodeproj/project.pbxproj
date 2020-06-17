@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,21 @@
 		F82103D22499697D00B1A211 /* ZarinPal_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103D12499697D00B1A211 /* ZarinPal_ChallengeTests.swift */; };
 		F82103DD2499697D00B1A211 /* ZarinPal_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103DC2499697D00B1A211 /* ZarinPal_ChallengeUITests.swift */; };
 		F84D0AC62499BD0600B88CA0 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D0AC52499BD0600B88CA0 /* UserProfileView.swift */; };
+		F85513BD2499E566006F309D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513BC2499E566006F309D /* NetworkService.swift */; };
+		F85513BF2499E5F6006F309D /* IGraphQLQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513BE2499E5F6006F309D /* IGraphQLQueryRequest.swift */; };
+		F85513C12499EC0C006F309D /* APIClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513C02499EC0C006F309D /* APIClientService.swift */; };
+		F85513C42499ED5B006F309D /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513C32499ED5B006F309D /* AppConfig.swift */; };
+		F85513C62499F71B006F309D /* INetworkServiceEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513C52499F71B006F309D /* INetworkServiceEndpoint.swift */; };
+		F85513C9249A04F4006F309D /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513C8249A04F4006F309D /* Storable.swift */; };
+		F85513CB249A04FD006F309D /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513CA249A04FD006F309D /* Storage.swift */; };
+		F85513CD249A06E9006F309D /* KeyChainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513CC249A06E9006F309D /* KeyChainStorage.swift */; };
+		F85513CF249A0F7F006F309D /* OAuthCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513CE249A0F7F006F309D /* OAuthCredential.swift */; };
+		F85513D1249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D0249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift */; };
+		F85513D3249A126D006F309D /* AuthenticationService+Authentictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D2249A126D006F309D /* AuthenticationService+Authentictor.swift */; };
+		F85513D5249A1436006F309D /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D4249A1436006F309D /* Authentication.swift */; };
+		F85513D7249A162D006F309D /* AppClientCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D6249A162D006F309D /* AppClientCredential.swift */; };
+		F85513D9249A2660006F309D /* XCAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D8249A2660006F309D /* XCAuthenticationService.swift */; };
+		F85513DB249A2697006F309D /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513DA249A2697006F309D /* AuthenticationService.swift */; };
 		F87C13F424997779002170B9 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C13F324997779002170B9 /* AuthenticationView.swift */; };
 		F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */; };
 		F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */; };
@@ -69,6 +84,21 @@
 		F82103DC2499697D00B1A211 /* ZarinPal_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZarinPal_ChallengeUITests.swift; sourceTree = "<group>"; };
 		F82103DE2499697D00B1A211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F84D0AC52499BD0600B88CA0 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		F85513BC2499E566006F309D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F85513BE2499E5F6006F309D /* IGraphQLQueryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGraphQLQueryRequest.swift; sourceTree = "<group>"; };
+		F85513C02499EC0C006F309D /* APIClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientService.swift; sourceTree = "<group>"; };
+		F85513C32499ED5B006F309D /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		F85513C52499F71B006F309D /* INetworkServiceEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INetworkServiceEndpoint.swift; sourceTree = "<group>"; };
+		F85513C8249A04F4006F309D /* Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
+		F85513CA249A04FD006F309D /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		F85513CC249A06E9006F309D /* KeyChainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainStorage.swift; sourceTree = "<group>"; };
+		F85513CE249A0F7F006F309D /* OAuthCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthCredential.swift; sourceTree = "<group>"; };
+		F85513D0249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OAuthCredential+AuthenticationCredential.swift"; sourceTree = "<group>"; };
+		F85513D2249A126D006F309D /* AuthenticationService+Authentictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationService+Authentictor.swift"; sourceTree = "<group>"; };
+		F85513D4249A1436006F309D /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		F85513D6249A162D006F309D /* AppClientCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClientCredential.swift; sourceTree = "<group>"; };
+		F85513D8249A2660006F309D /* XCAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCAuthenticationService.swift; sourceTree = "<group>"; };
+		F85513DA249A2697006F309D /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		F87C13F324997779002170B9 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryListView.swift; sourceTree = "<group>"; };
 		F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryRowView.swift; sourceTree = "<group>"; };
@@ -155,14 +185,17 @@
 		F82103B92499697B00B1A211 /* ZarinPal-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				F85513C22499ED50006F309D /* Constant */,
 				F875B8D024996B420052C1DC /* Views */,
+				F85513B92499E069006F309D /* Models */,
+				F85513B82499D136006F309D /* Service */,
 				F82103BA2499697B00B1A211 /* AppDelegate.swift */,
-				F82103BC2499697B00B1A211 /* SceneDelegate.swift */,
 				F82103C02499697D00B1A211 /* Assets.xcassets */,
-				F82103C52499697D00B1A211 /* LaunchScreen.storyboard */,
 				F82103C82499697D00B1A211 /* Info.plist */,
+				F82103C52499697D00B1A211 /* LaunchScreen.storyboard */,
 				F82103C22499697D00B1A211 /* Preview Content */,
 				F8CF16C424998FBD00464F90 /* RepositoryData.swift */,
+				F82103BC2499697B00B1A211 /* SceneDelegate.swift */,
 			);
 			path = "ZarinPal-Challenge";
 			sourceTree = "<group>";
@@ -180,6 +213,7 @@
 			children = (
 				F82103D12499697D00B1A211 /* ZarinPal_ChallengeTests.swift */,
 				F82103D32499697D00B1A211 /* Info.plist */,
+				F85513D8249A2660006F309D /* XCAuthenticationService.swift */,
 			);
 			path = "ZarinPal-ChallengeTests";
 			sourceTree = "<group>";
@@ -191,6 +225,65 @@
 				F82103DE2499697D00B1A211 /* Info.plist */,
 			);
 			path = "ZarinPal-ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		F85513B82499D136006F309D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F85513C7249A04D0006F309D /* Storage */,
+				F85513BB2499E40B006F309D /* Network */,
+				F85513BA2499E34F006F309D /* Authentication */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F85513B92499E069006F309D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F85513BA2499E34F006F309D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F85513D4249A1436006F309D /* Authentication.swift */,
+				F85513DA249A2697006F309D /* AuthenticationService.swift */,
+				F85513D2249A126D006F309D /* AuthenticationService+Authentictor.swift */,
+				F85513CE249A0F7F006F309D /* OAuthCredential.swift */,
+				F85513D0249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F85513BB2499E40B006F309D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F85513BC2499E566006F309D /* NetworkService.swift */,
+				F85513BE2499E5F6006F309D /* IGraphQLQueryRequest.swift */,
+				F85513C52499F71B006F309D /* INetworkServiceEndpoint.swift */,
+				F85513C02499EC0C006F309D /* APIClientService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F85513C22499ED50006F309D /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				F85513D6249A162D006F309D /* AppClientCredential.swift */,
+				F85513C32499ED5B006F309D /* AppConfig.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		F85513C7249A04D0006F309D /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				F85513C8249A04F4006F309D /* Storable.swift */,
+				F85513CA249A04FD006F309D /* Storage.swift */,
+				F85513CC249A06E9006F309D /* KeyChainStorage.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		F875B8D024996B420052C1DC /* Views */ = {
@@ -219,6 +312,7 @@
 				F82103B32499697B00B1A211 /* Sources */,
 				F82103B42499697B00B1A211 /* Frameworks */,
 				F82103B52499697B00B1A211 /* Resources */,
+				0A09E625E6CAF030614FFD4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +350,7 @@
 				F82103D42499697D00B1A211 /* Sources */,
 				F82103D52499697D00B1A211 /* Frameworks */,
 				F82103D62499697D00B1A211 /* Resources */,
+				94C294ECA6C35C9EFCEF3280 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,6 +433,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0A09E625E6CAF030614FFD4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-Challenge/Pods-ZarinPal-Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-Challenge/Pods-ZarinPal-Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-Challenge/Pods-ZarinPal-Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		130565AA3D8541D872E4341B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,6 +516,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		94C294ECA6C35C9EFCEF3280 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -413,14 +542,28 @@
 			files = (
 				F8E588922499B33F0083BD93 /* UserRepositoryPullRequestListView.swift in Sources */,
 				F8E588902499B3290083BD93 /* UserRepositoryIssueListView.swift in Sources */,
+				F85513DB249A2697006F309D /* AuthenticationService.swift in Sources */,
+				F85513BF2499E5F6006F309D /* IGraphQLQueryRequest.swift in Sources */,
 				F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */,
 				F8E5888C2499A3070083BD93 /* UserRepositoryDetailView.swift in Sources */,
+				F85513D3249A126D006F309D /* AuthenticationService+Authentictor.swift in Sources */,
+				F85513CB249A04FD006F309D /* Storage.swift in Sources */,
+				F85513C12499EC0C006F309D /* APIClientService.swift in Sources */,
+				F85513D5249A1436006F309D /* Authentication.swift in Sources */,
+				F85513C42499ED5B006F309D /* AppConfig.swift in Sources */,
 				F82103BB2499697B00B1A211 /* AppDelegate.swift in Sources */,
+				F85513D1249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift in Sources */,
 				F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */,
 				F82103BD2499697B00B1A211 /* SceneDelegate.swift in Sources */,
 				F84D0AC62499BD0600B88CA0 /* UserProfileView.swift in Sources */,
+				F85513D7249A162D006F309D /* AppClientCredential.swift in Sources */,
 				F8E5888E2499B3130083BD93 /* UserRepositoryBranchListView.swift in Sources */,
 				F87C13F424997779002170B9 /* AuthenticationView.swift in Sources */,
+				F85513CD249A06E9006F309D /* KeyChainStorage.swift in Sources */,
+				F85513C9249A04F4006F309D /* Storable.swift in Sources */,
+				F85513CF249A0F7F006F309D /* OAuthCredential.swift in Sources */,
+				F85513C62499F71B006F309D /* INetworkServiceEndpoint.swift in Sources */,
+				F85513BD2499E566006F309D /* NetworkService.swift in Sources */,
 				F8CF16C524998FBD00464F90 /* RepositoryData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +572,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85513D9249A2660006F309D /* XCAuthenticationService.swift in Sources */,
 				F82103D22499697D00B1A211 /* ZarinPal_ChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,7 +733,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ZarinPal-Challenge/Preview Content\"";
-				DEVELOPMENT_TEAM = 638B4QA28J;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "ZarinPal-Challenge/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -611,7 +755,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ZarinPal-Challenge/Preview Content\"";
-				DEVELOPMENT_TEAM = 638B4QA28J;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "ZarinPal-Challenge/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

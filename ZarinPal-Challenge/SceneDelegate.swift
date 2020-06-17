@@ -13,6 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    let authentication = AuthenticationService()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -20,6 +21,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
+        
+        print(#function,connectionOptions)
+        
         var items = [RepositoryData]()
         let fakeBranche = RepositoryData.BranchData(title: "Branch", createdDate: Date(timeIntervalSinceNow: -100), updateDate: Date())
         let fakeIssue = RepositoryData.IssueData(number: "1", title: "Issue", date: Date(timeIntervalSinceNow: -50), description: "Issue Description")
@@ -43,6 +47,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
             window.makeKeyAndVisible()
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
+            _ = self.authentication.requestClientAuthorize(credential: AppConfig.clientCredetianl)
         }
     }
 
@@ -72,6 +80,29 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+    }
+    
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        print(#function,URLContexts)
+        guard let url = URLContexts.first?.url else { return }
+        
+        let queryItems = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems
+        print(queryItems)
+        if queryItems?.contains(where: { $0.name == "error" }) == true  {
+            
+            let alert = UIAlertController(title: queryItems?.first(where: { $0.name == "error" })?.value,
+                              message: queryItems?.first(where: { $0.name == "error_description" })?.value,
+                              preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (action) in
+                alert.dismiss(animated: true, completion: nil)
+            }))
+            
+            UIApplication.shared.windows.first(where: { $0.isKeyWindow })?
+                .rootViewController?.present(alert, animated: true, completion: nil)
+            
+        }else if let code = queryItems?.first(where: { $0.name == "code"}), let codeValue = code.value  {
+            _ = authentication.requestAccessToken(with: codeValue, client: AppConfig.clientCredetianl).subscribe()
+        }
     }
 
 
