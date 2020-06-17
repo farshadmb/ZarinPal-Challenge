@@ -24,8 +24,8 @@ struct UserRepositoryDetailView: View {
             VStack(alignment: .leading, spacing: 8) {
                 data.description.map({
                     Text($0)
-                        .font(.system(.body))
                         .fontWeight(.regular)
+                        .font(.system(.body))
                         .lineLimit(5)
                 })
                 
@@ -36,8 +36,8 @@ struct UserRepositoryDetailView: View {
                                 self.mode = mode
                             }) {
                                 Text(mode.rawValue)
-                                    .font(.system(.headline))
                                     .fontWeight(.medium)
+                                    .font(.system(.headline))
                                     .lineLimit(1)
                                     .foregroundColor(self.mode == mode ? .blue : .gray)
                                     .padding(8.0)
@@ -55,39 +55,27 @@ struct UserRepositoryDetailView: View {
             }
             .padding(.top, 16)
             .padding([.leading, .trailing], 8)
-            buildListView(items:[])
+            buildListView()
         }
         .navigationBarTitle(Text(data.title), displayMode: .inline)
         
         
     }
     
-    func buildListView(items : [String]) -> some View {
-        var items = items
-        if items.isEmpty {
-            items = Array(repeating: self.mode.rawValue, count: 20)
-        }
+    func buildListView() -> some View {
+        
+        let view : AnyView
         
         switch self.mode {
         case .branch:
-            return List(items, id: \.self) { item in
-                Text(item)
-                    .font(.system(.headline))
-                    .fontWeight(.medium)
-            }
+            view = AnyView(UserRepositoryBranchListView(listItem: .constant(data.branches)))
         case .pullRequest:
-            return List(items, id: \.self) { item in
-                Text(item)
-                    .font(.system(.body))
-                    .fontWeight(.medium)
-            }
+            view = AnyView(UserRepositoryPullRequestListView(requestes: .constant(data.pullRequests)))
         case .issues:
-            return List(items, id: \.self) { item in
-                Text(item)
-                    .font(.system(.subheadline))
-                    .fontWeight(.medium)
-            }
+            view = AnyView(UserRepositoryIssueListView(issues: .constant(data.issues)))
         }
+        
+        return view
     }
 }
 

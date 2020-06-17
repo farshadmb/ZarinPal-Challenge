@@ -22,6 +22,9 @@
 		F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */; };
 		F8CF16C524998FBD00464F90 /* RepositoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF16C424998FBD00464F90 /* RepositoryData.swift */; };
 		F8E5888C2499A3070083BD93 /* UserRepositoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */; };
+		F8E5888E2499B3130083BD93 /* UserRepositoryBranchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */; };
+		F8E588902499B3290083BD93 /* UserRepositoryIssueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */; };
+		F8E588922499B33F0083BD93 /* UserRepositoryPullRequestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E588912499B33F0083BD93 /* UserRepositoryPullRequestListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryRowView.swift; sourceTree = "<group>"; };
 		F8CF16C424998FBD00464F90 /* RepositoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryData.swift; sourceTree = "<group>"; };
 		F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryDetailView.swift; sourceTree = "<group>"; };
+		F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryBranchListView.swift; sourceTree = "<group>"; };
+		F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryIssueListView.swift; sourceTree = "<group>"; };
+		F8E588912499B33F0083BD93 /* UserRepositoryPullRequestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryPullRequestListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +198,9 @@
 				F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */,
 				F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */,
 				F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */,
+				F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */,
+				F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */,
+				F8E588912499B33F0083BD93 /* UserRepositoryPullRequestListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -399,11 +408,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E588922499B33F0083BD93 /* UserRepositoryPullRequestListView.swift in Sources */,
+				F8E588902499B3290083BD93 /* UserRepositoryIssueListView.swift in Sources */,
 				F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */,
 				F8E5888C2499A3070083BD93 /* UserRepositoryDetailView.swift in Sources */,
 				F82103BB2499697B00B1A211 /* AppDelegate.swift in Sources */,
 				F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */,
 				F82103BD2499697B00B1A211 /* SceneDelegate.swift in Sources */,
+				F8E5888E2499B3130083BD93 /* UserRepositoryBranchListView.swift in Sources */,
 				F87C13F424997779002170B9 /* AuthenticationView.swift in Sources */,
 				F8CF16C524998FBD00464F90 /* RepositoryData.swift in Sources */,
 			);

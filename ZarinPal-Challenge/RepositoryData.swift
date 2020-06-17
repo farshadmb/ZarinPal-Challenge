@@ -19,7 +19,7 @@ struct RepositoryData: Identifiable {
     var description: String?
     
     var branches: [BranchData] = []
-    var pullRequestList: [PullRequestData] = []
+    var pullRequests: [PullRequestData] = []
     var issues: [IssueData] = []
 }
 
