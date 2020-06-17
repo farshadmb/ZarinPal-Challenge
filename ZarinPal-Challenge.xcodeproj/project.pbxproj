@@ -21,6 +21,7 @@
 		F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */; };
 		F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */; };
 		F8CF16C524998FBD00464F90 /* RepositoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF16C424998FBD00464F90 /* RepositoryData.swift */; };
+		F8E5888C2499A3070083BD93 /* UserRepositoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryListView.swift; sourceTree = "<group>"; };
 		F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryRowView.swift; sourceTree = "<group>"; };
 		F8CF16C424998FBD00464F90 /* RepositoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryData.swift; sourceTree = "<group>"; };
+		F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				F87C13F324997779002170B9 /* AuthenticationView.swift */,
 				F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */,
 				F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */,
+				F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */,
+				F8E5888C2499A3070083BD93 /* UserRepositoryDetailView.swift in Sources */,
 				F82103BB2499697B00B1A211 /* AppDelegate.swift in Sources */,
 				F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */,
 				F82103BD2499697B00B1A211 /* SceneDelegate.swift in Sources */,

@@ -12,20 +12,16 @@ struct UserRepositoryRowView: View {
     
     var repository : RespositoryData
     var body: some View {
-        HStack (alignment: .center, spacing: 8) {
-            VStack(alignment: .leading, spacing: 8) {
-                Text(repository.title)
-                    .font(.system(.headline, design: .serif))
-                    .fontWeight(.semibold)
-                repository.description.map({
-                    Text($0)
-                        .font(.system(.body, design: .serif))
-                        .fontWeight(.regular)
-                })
-                
-            }
-            
-            NavigationLink("", destination: TempView())
+        
+        VStack(alignment: .leading, spacing: 8) {
+            Text(repository.title)
+                .font(.system(.headline, design: .serif))
+                .fontWeight(.semibold)
+            repository.description.map({
+                Text($0)
+                    .font(.system(.body, design: .serif))
+                    .fontWeight(.regular)
+            })
         }
         .padding()
     }

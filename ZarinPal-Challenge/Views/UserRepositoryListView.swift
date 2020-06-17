@@ -15,8 +15,11 @@ struct UserRepositoryListView: View  {
         
         NavigationView {
             List(items) { item in
-                UserRepositoryRowView(repository: item)
+                NavigationLink(destination: UserRepositoryDetailView(data:item)) {
+                    UserRepositoryRowView(repository: item)
+                }
             }
+            .navigationViewStyle(StackNavigationViewStyle())
             .navigationBarTitle("Repositories")
             .navigationBarItems(trailing:  NavigationLink(destination: EmptyView()) {
                        Image(systemName: "person.circle")
