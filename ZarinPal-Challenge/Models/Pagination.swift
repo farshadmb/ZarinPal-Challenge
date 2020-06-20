@@ -9,8 +9,8 @@
 import Foundation
 
 struct Pagination : Decodable {
-        
-    private let endCursor: String
+    
+    let endCursor: String
     let hasNextPage: Bool
     let hasPreviousPage: Bool
 }

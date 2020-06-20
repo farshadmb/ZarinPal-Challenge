@@ -8,28 +8,90 @@
 
 import Foundation
 import RxSwift
+import AutoGraphQL
 
 protocol GitHubUserRepositoryUseCases {
     
-    associatedtype T : Storable
+    typealias T = Repository
     
     func fetchRepositories(last: Int) -> Observable<[T]>
     
-    func fetchRepository(id: Int) -> Observable<T>
+    func fetchRepository(name: String) -> Observable<T>
+    
+    func fetchMoreRepositories() -> Observable<[T]>
     
 }
 
 
-final class GitHubUserRepository <G: Storable>: BaseRepository, GitHubUserRepositoryUseCases {
+final class GitHubUserRepository : BaseRepository, GitHubUserRepositoryUseCases {
     
-    typealias T = G
+    private var lastPage: Pagination?
+    private var pageSize: Int = 10
     
-    func fetchRepository(id: Int) -> Observable<T> {
+    required init(authenticator: AuthenticationInterceptable, networkService: NetworkServiceInterceptable) {
+        networkService.addingRequest(interceptor: authenticator)
+        super.init(storage: nil, network: networkService, authenticator: authenticator)
+    }
+    
+    func fetchRepository(name: String) -> Observable<T> {
         .empty()
     }
     
     func fetchRepositories(last: Int) -> Observable<[T]> {
-        .empty()
+        
+        guard let network = networkService else {
+            return .empty()
+        }
+        
+        self.pageSize = last
+        
+        return fetchRespositories(last:pageSize,
+                                  cursor: lastPage?.endCursor,
+                                  networkService: network)
+        
+    }
+    
+    func fetchMoreRepositories() -> Observable<[T]> {
+        
+        guard let lastPage = lastPage, lastPage.hasPreviousPage,
+            let network = networkService else {
+            return .empty()
+        }
+        
+        return fetchRespositories(last:self.pageSize,
+                                  cursor: lastPage.endCursor,
+                                  networkService: network)
+    }
+    
+    
+    ////////////////////////////////////////////////////////////////
+    //MARK:-
+    //MARK:Private Methods
+    //MARK:-
+    ////////////////////////////////////////////////////////////////
+
+    
+    private typealias GitHubRepositoriesResponse = GraphQLResponse<Repositories>
+    
+    private func fetchRespositories(last: Int, cursor: String? , networkService :NetworkService ) -> Observable<[T]> {
+        
+        let query = GitHubGraphQLFactory.repositoriesQuery(last: last, cursor: cursor)
+        
+        return networkService.executeRequest(endpoint: "graphql", query: query, headers: [:])
+            .map(map(response:))
+            .map(map(respositories:))
+    }
+    
+    
+    private func map(response : Result<GitHubRepositoriesResponse,Error>) throws -> Repositories? {
+        return try response.get().data
+    }
+    
+    private func map(respositories: Repositories?) -> [T] {
+        let lock = NSLock()
+        lock.lock(); defer { lock.unlock() }
+        lastPage = respositories?.page
+        return respositories?.repositores.compactMap( { $0 }) ?? []
     }
     
 }

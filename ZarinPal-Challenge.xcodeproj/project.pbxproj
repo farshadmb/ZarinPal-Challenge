@@ -49,6 +49,8 @@
 		F8D2F9F7249DE3620029FD63 /* Respositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2F9F6249DE3620029FD63 /* Respositories.swift */; };
 		F8D2F9FA249DE62A0029FD63 /* GraphQLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2F9F9249DE62A0029FD63 /* GraphQLResponse.swift */; };
 		F8D2F9FD249DED4C0029FD63 /* XCRespositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2F9FC249DED4C0029FD63 /* XCRespositoryTests.swift */; };
+		F8D2FA00249DFAF30029FD63 /* GitHubGraphQLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2F9FF249DFAF30029FD63 /* GitHubGraphQLFactory.swift */; };
+		F8D2FA03249E04F50029FD63 /* XCGitHubUserRepositoryTestes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA02249E04F50029FD63 /* XCGitHubUserRepositoryTestes.swift */; };
 		F8E5888C2499A3070083BD93 /* UserRepositoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */; };
 		F8E5888E2499B3130083BD93 /* UserRepositoryBranchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */; };
 		F8E588902499B3290083BD93 /* UserRepositoryIssueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */; };
@@ -127,6 +129,8 @@
 		F8D2F9F6249DE3620029FD63 /* Respositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Respositories.swift; sourceTree = "<group>"; };
 		F8D2F9F9249DE62A0029FD63 /* GraphQLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLResponse.swift; sourceTree = "<group>"; };
 		F8D2F9FC249DED4C0029FD63 /* XCRespositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCRespositoryTests.swift; sourceTree = "<group>"; };
+		F8D2F9FF249DFAF30029FD63 /* GitHubGraphQLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubGraphQLFactory.swift; sourceTree = "<group>"; };
+		F8D2FA02249E04F50029FD63 /* XCGitHubUserRepositoryTestes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCGitHubUserRepositoryTestes.swift; sourceTree = "<group>"; };
 		F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryDetailView.swift; sourceTree = "<group>"; };
 		F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryBranchListView.swift; sourceTree = "<group>"; };
 		F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryIssueListView.swift; sourceTree = "<group>"; };
@@ -218,6 +222,7 @@
 		F82103B92499697B00B1A211 /* ZarinPal-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				F8D2F9FE249DFADF0029FD63 /* Utitlies */,
 				F85513C22499ED50006F309D /* Constant */,
 				F875B8D024996B420052C1DC /* Views */,
 				F85513B92499E069006F309D /* Models */,
@@ -245,6 +250,7 @@
 		F82103D02499697D00B1A211 /* ZarinPal-ChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				F8D2FA01249E04C90029FD63 /* RepositoriesTestes */,
 				F8D2F9FB249DED2F0029FD63 /* Model Decoding Testes */,
 				F8853320249DAC9200B9CAD7 /* AuthenticatorHelper */,
 				F82103D12499697D00B1A211 /* ZarinPal_ChallengeTests.swift */,
@@ -383,6 +389,22 @@
 				F8D2F9FC249DED4C0029FD63 /* XCRespositoryTests.swift */,
 			);
 			path = "Model Decoding Testes";
+			sourceTree = "<group>";
+		};
+		F8D2F9FE249DFADF0029FD63 /* Utitlies */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2F9FF249DFAF30029FD63 /* GitHubGraphQLFactory.swift */,
+			);
+			path = Utitlies;
+			sourceTree = "<group>";
+		};
+		F8D2FA01249E04C90029FD63 /* RepositoriesTestes */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2FA02249E04F50029FD63 /* XCGitHubUserRepositoryTestes.swift */,
+			);
+			path = RepositoriesTestes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -666,6 +688,7 @@
 				F84D0AC62499BD0600B88CA0 /* UserProfileView.swift in Sources */,
 				F85513D7249A162D006F309D /* AppClientCredential.swift in Sources */,
 				F8D2F9F5249DE30B0029FD63 /* Pagination.swift in Sources */,
+				F8D2FA00249DFAF30029FD63 /* GitHubGraphQLFactory.swift in Sources */,
 				F8E5888E2499B3130083BD93 /* UserRepositoryBranchListView.swift in Sources */,
 				F87C13F424997779002170B9 /* AuthenticationView.swift in Sources */,
 				F85513CD249A06E9006F309D /* KeyChainStorage.swift in Sources */,
@@ -685,6 +708,7 @@
 			files = (
 				F85513D9249A2660006F309D /* XCAuthenticationService.swift in Sources */,
 				F82103D22499697D00B1A211 /* ZarinPal_ChallengeTests.swift in Sources */,
+				F8D2FA03249E04F50029FD63 /* XCGitHubUserRepositoryTestes.swift in Sources */,
 				F8853322249DACA700B9CAD7 /* XCAuthenticatorHelper.swift in Sources */,
 				F8D2F9FD249DED4C0029FD63 /* XCRespositoryTests.swift in Sources */,
 				F8853324249DADEA00B9CAD7 /* XCNetworkServiceTests.swift in Sources */,
