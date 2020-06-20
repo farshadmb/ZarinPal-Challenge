@@ -86,17 +86,26 @@ final class APIClient: NetworkServiceInterceptable {
                            query: IGraphQLQueryRequest,
                            headers: NetworkHeadersType) -> Observable<Result<T, Error>> where T : Decodable {
         
-        let httpBody = query.query.data(using: .utf8, allowLossyConversion: false)
         
+        let parameters = ["query":query.query,"variables":"{}"] as [String:Any]
         let dataRequest = session.request(attachBaseURL(into: endpoint),
                                           method: .post,
+                                          parameters: parameters,
+                                          encoding: JSONEncoding.default,
                                           headers: HTTPHeaders(headers),
-                                          interceptor: interceptor,
-                                          requestModifier: { (request) in
-                                            request.httpBody = httpBody
-        })
+                                          interceptor: interceptor)
             .validate()
+            .responseString { (response) in
+                if let error = response.error {
+                    print(error, "Whoops, error \(error.localizedDescription)")
+                }
+                
+                print(response, "No response")
+                print("Status code not =>", response.response?.statusCode ?? 0," 200")
+                               
+        }
         
+        debugPrint(dataRequest)
         return map(dataRequest: dataRequest, decoder: decoder)
     }
     
@@ -109,9 +118,13 @@ final class APIClient: NetworkServiceInterceptable {
         let dataRequest = session.request(attachBaseURL(into: endpoint),
                                           method: method,
                                           parameters: parameters,
+                                          encoding: URLEncoding.default,
                                           headers: HTTPHeaders(headers),
                                           interceptor: interceptor)
             .validate()
+            .responseString { (response) in
+                print(try? response.result.get())
+        }
         
         return map(dataRequest: dataRequest, decoder: decoder)
     }
@@ -149,7 +162,8 @@ final class APIClient: NetworkServiceInterceptable {
     ///   - dataRequest: <#dataRequest description#>
     ///   - decoder: <#decoder description#>
     private func map<T: Decodable> (dataRequest: DataRequest, decoder: DataDecoder) -> Observable<Result<T, Error>> {
-        dataRequest.rx.decodable(decoder: decoder)
+        print(dataRequest)
+        return dataRequest.rx.decodable(decoder: decoder)
             .map { value in
                 return Result<T,Error> { value }
         }.catchError { (error) -> Observable<Result<T, Error>> in

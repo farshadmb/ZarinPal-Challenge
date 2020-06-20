@@ -39,6 +39,8 @@
 		F86A2119249A498C00C8AE69 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A2118249A498C00C8AE69 /* AuthenticationRepository.swift */; };
 		F86A211C249A4C4200C8AE69 /* AuthenticationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A211B249A4C4200C8AE69 /* AuthenticationStatus.swift */; };
 		F87C13F424997779002170B9 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C13F324997779002170B9 /* AuthenticationView.swift */; };
+		F8853322249DACA700B9CAD7 /* XCAuthenticatorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8853321249DACA700B9CAD7 /* XCAuthenticatorHelper.swift */; };
+		F8853324249DADEA00B9CAD7 /* XCNetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8853323249DADEA00B9CAD7 /* XCNetworkServiceTests.swift */; };
 		F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */; };
 		F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */; };
 		F8CF16C524998FBD00464F90 /* RepositoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF16C424998FBD00464F90 /* RepositoryData.swift */; };
@@ -110,6 +112,8 @@
 		F86A2118249A498C00C8AE69 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
 		F86A211B249A4C4200C8AE69 /* AuthenticationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationStatus.swift; sourceTree = "<group>"; };
 		F87C13F324997779002170B9 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		F8853321249DACA700B9CAD7 /* XCAuthenticatorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCAuthenticatorHelper.swift; sourceTree = "<group>"; };
+		F8853323249DADEA00B9CAD7 /* XCNetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCNetworkServiceTests.swift; sourceTree = "<group>"; };
 		F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryListView.swift; sourceTree = "<group>"; };
 		F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryRowView.swift; sourceTree = "<group>"; };
 		F8CF16C424998FBD00464F90 /* RepositoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryData.swift; sourceTree = "<group>"; };
@@ -231,9 +235,11 @@
 		F82103D02499697D00B1A211 /* ZarinPal-ChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				F8853320249DAC9200B9CAD7 /* AuthenticatorHelper */,
 				F82103D12499697D00B1A211 /* ZarinPal_ChallengeTests.swift */,
 				F82103D32499697D00B1A211 /* Info.plist */,
 				F85513D8249A2660006F309D /* XCAuthenticationService.swift */,
+				F8853323249DADEA00B9CAD7 /* XCNetworkServiceTests.swift */,
 			);
 			path = "ZarinPal-ChallengeTests";
 			sourceTree = "<group>";
@@ -338,6 +344,14 @@
 				F84D0AC52499BD0600B88CA0 /* UserProfileView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F8853320249DAC9200B9CAD7 /* AuthenticatorHelper */ = {
+			isa = PBXGroup;
+			children = (
+				F8853321249DACA700B9CAD7 /* XCAuthenticatorHelper.swift */,
+			);
+			path = AuthenticatorHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -618,6 +632,8 @@
 			files = (
 				F85513D9249A2660006F309D /* XCAuthenticationService.swift in Sources */,
 				F82103D22499697D00B1A211 /* ZarinPal_ChallengeTests.swift in Sources */,
+				F8853322249DACA700B9CAD7 /* XCAuthenticatorHelper.swift in Sources */,
+				F8853324249DADEA00B9CAD7 /* XCNetworkServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
