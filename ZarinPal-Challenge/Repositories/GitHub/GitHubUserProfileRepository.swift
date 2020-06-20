@@ -18,14 +18,34 @@ protocol GitHubUserProfileRepositoryUseCases {
 }
 
 
-final class GitHubUserProfileRepository: BaseRepository, GitHubUserProfileRepositoryUseCases {
+final class GitHubUserProfileRepository<UP: Storable>: BaseRepository, GitHubUserProfileRepositoryUseCases {
     
-    func fetchUserProfile<T>() -> Observable<T> where T : Storable {
-        .empty()
+    required init(authenticator: AuthenticationInterceptable, networkService: NetworkServiceInterceptable) {
+        networkService.addingRequest(interceptor: authenticator)
+        super.init(storage: nil, network: networkService, authenticator: authenticator)
     }
     
-    func logoutUser() {
+    func fetchUserProfile<T: Storable>() -> Observable<T> {
+        let query = GitHubGraphQLFactory.profileQuery()
         
+        guard let networkService = networkService else {
+            return .empty()
+        }
+        
+        return networkService.executeRequest(endpoint: "graphql", query: query, headers: [:])
+            .map(map(response:))
+            .filter { $0 != nil }
+            .map { $0! }
+    }
+    
+    
+    private func map<T: Storable>(response : Result<GraphQLResponse<UP>,Error>) throws -> T? {
+        return try response.get().data as? T
+    }
+    
+    
+    func logoutUser() {
+        fatalError("not implemented due the time issue.")
     }
     
 }
