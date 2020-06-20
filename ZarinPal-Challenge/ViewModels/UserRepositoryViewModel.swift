@@ -19,7 +19,7 @@ class UserRepositoryViewModel : ObservableObject, Identifiable {
     @Published var forkCount: Int = 0
     @Published var avatarImage: URL? = nil
     @Published var languageName: String? = nil
-    @Published var languageColor: UIColor = nil
+    @Published var languageColor: UIColor? = nil
     
     let userRepositoryUseCases: GitHubUserRepositoryUseCases
     let model: Repository
