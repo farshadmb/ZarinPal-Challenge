@@ -40,12 +40,12 @@ ZarinPal-Challenge is a Swift and SwiftUI client App for represent User GitHub R
 
 ## - Gitwokflow 
 
-[#1](./pull/1) PR Presentation Layer into Develop 
+[#1](../../pull/1) PR Presentation Layer into Develop 
 
-[#2](./pull/1) PR Data Layer into Develop
+[#2](../../pull/2) PR Data Layer into Develop
 
-[#3](./pull/1)  PR Domain or Repository Layer into Develop 
+[#3](../../pull/3)  PR Domain or Repository Layer into Develop 
 
-[#4](./pull/1) PR ViewModel Layer 
+[#4](../../pull/4) PR ViewModel Layer 
 
-[#5](./pull/1) PR Develop to Master
+[#5](../../pull/5) PR Develop to Master
