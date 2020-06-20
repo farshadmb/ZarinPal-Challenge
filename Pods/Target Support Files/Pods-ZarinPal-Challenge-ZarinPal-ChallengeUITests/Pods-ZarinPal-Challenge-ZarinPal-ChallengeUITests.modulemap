@@ -1,6 +1,0 @@
-framework module Pods_ZarinPal_Challenge_ZarinPal_ChallengeUITests {
-  umbrella header "Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
