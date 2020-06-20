@@ -61,6 +61,7 @@
 		F8D2FA14249E31C30029FD63 /* UserRepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA13249E31C30029FD63 /* UserRepositoryViewModel.swift */; };
 		F8D2FA16249E33A50029FD63 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA15249E33A50029FD63 /* UIColor+Hex.swift */; };
 		F8D2FA19249E382F0029FD63 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA18249E382F0029FD63 /* ActivityIndicatorView.swift */; };
+		F8D2FA1B249E64CD0029FD63 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA1A249E64CD0029FD63 /* UserProfileViewModel.swift */; };
 		F8E5888C2499A3070083BD93 /* UserRepositoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */; };
 		F8E5888E2499B3130083BD93 /* UserRepositoryBranchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */; };
 		F8E588902499B3290083BD93 /* UserRepositoryIssueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */; };
@@ -151,6 +152,7 @@
 		F8D2FA13249E31C30029FD63 /* UserRepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryViewModel.swift; sourceTree = "<group>"; };
 		F8D2FA15249E33A50029FD63 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		F8D2FA18249E382F0029FD63 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		F8D2FA1A249E64CD0029FD63 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryDetailView.swift; sourceTree = "<group>"; };
 		F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryBranchListView.swift; sourceTree = "<group>"; };
 		F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryIssueListView.swift; sourceTree = "<group>"; };
@@ -441,6 +443,7 @@
 				F8D2FA0F249E2F180029FD63 /* AuthenticationViewModel.swift */,
 				F8D2FA11249E31950029FD63 /* UserRepositoryListViewModel.swift */,
 				F8D2FA13249E31C30029FD63 /* UserRepositoryViewModel.swift */,
+				F8D2FA1A249E64CD0029FD63 /* UserProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -727,6 +730,7 @@
 				F85513C12499EC0C006F309D /* APIClientService.swift in Sources */,
 				F85513D5249A1436006F309D /* Authentication.swift in Sources */,
 				F85513C42499ED5B006F309D /* AppConfig.swift in Sources */,
+				F8D2FA1B249E64CD0029FD63 /* UserProfileViewModel.swift in Sources */,
 				F82103BB2499697B00B1A211 /* AppDelegate.swift in Sources */,
 				F8D2FA0C249E271C0029FD63 /* AppDIContainer.swift in Sources */,
 				F86A2119249A498C00C8AE69 /* AuthenticationRepository.swift in Sources */,

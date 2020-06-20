@@ -20,7 +20,8 @@ struct UserRepositoryListView: View  {
         
         NavigationView {
             Group {
-                NavigationLink(destination: UserProfileView(),isActive: self.$selectProfile) {
+                NavigationLink(destination: UserProfileView(viewModel: UserProfileViewModel(userProfileUseCases: AppDIContainer.userProfileUseCases)),
+                               isActive: self.$selectProfile) {
                     EmptyView()
                 }
                 .hidden().frame(width: 0, height: 0.0, alignment: .center)
@@ -85,14 +86,6 @@ struct UserRepositoryListView: View  {
         }
     }
     
-}
-
-struct TempView : View {
-    var body: some View {
-        NavigationLink(destination: UserProfileView()) {
-            Image(systemName: "person.circle").accentColor(.green)
-        }
-    }
 }
 
 struct UserRepositoryListView_Previews: PreviewProvider {
