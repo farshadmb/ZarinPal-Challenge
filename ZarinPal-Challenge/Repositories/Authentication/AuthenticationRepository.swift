@@ -13,7 +13,7 @@ import UIKit
 /// <#Description#>
 protocol AuthenticationUseCase : class {
         
-    func authorizeUser() -> Observable<Bool>
+    func authorizeUser() -> Observable<URL?>
     
     func fetchCredential(with code: String) -> Observable<Bool>
     
@@ -47,13 +47,13 @@ final class AuthenticationRepository : BaseRepository, AuthenticationUseCase {
         return authenticator.requestAccessToken(with: code, client: clientCredential)
     }
     
-    func authorizeUser() -> Observable<Bool> {
+    func authorizeUser() -> Observable<URL?> {
         
         guard let authenticator = authenticator else {
-            return .just(false)
+            return .just(nil)
         }
         
-        return authenticator.requestClientAuthorize(credential: clientCredential)
+        return authenticator.buildAuthentication(credential: clientCredential)
     }
  
 }

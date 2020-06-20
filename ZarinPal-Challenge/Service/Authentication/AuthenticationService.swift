@@ -41,10 +41,10 @@ final class AuthenticationService : AuthenticationInterceptable {
         authenticated.onNext(loadCredentialFromDisk() != nil)
     }
     
-    func requestClientAuthorize(credential: AppClientCredential) -> Observable<Bool> {
+    func buildAuthentication(credential: AppClientCredential) -> Observable<URL?> {
         
         guard let url = URL(string:"https://github.com/login/oauth/authorize") else {
-            return .just(false)
+            return .just(nil)
         }
         
         do {
@@ -52,12 +52,13 @@ final class AuthenticationService : AuthenticationInterceptable {
             
             let request = try URLEncodedFormParameterEncoder.default.encode(credential, into: urlRequest)
                 
-            UIApplication.shared.open(request.url!,
-                                      options: [:]) { (result) in
-                                        print(result)
+            guard let outputURL = request.url else {
+                return .just(nil)
             }
             
-            return .just(true)
+            let url = try outputURL.asURL()
+            
+            return .just(url)
         }
         catch let error {
             return .error(error)
