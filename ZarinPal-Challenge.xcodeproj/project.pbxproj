@@ -53,6 +53,8 @@
 		F8D2FA03249E04F50029FD63 /* XCGitHubUserRepositoryTestes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA02249E04F50029FD63 /* XCGitHubUserRepositoryTestes.swift */; };
 		F8D2FA05249E1B260029FD63 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA04249E1B260029FD63 /* UserProfile.swift */; };
 		F8D2FA07249E1EBF0029FD63 /* XCGitHubProfileRepositoriy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA06249E1EBF0029FD63 /* XCGitHubProfileRepositoriy.swift */; };
+		F8D2FA0A249E20620029FD63 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA09249E20620029FD63 /* AppViewModel.swift */; };
+		F8D2FA0C249E271C0029FD63 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA0B249E271C0029FD63 /* AppDIContainer.swift */; };
 		F8E5888C2499A3070083BD93 /* UserRepositoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */; };
 		F8E5888E2499B3130083BD93 /* UserRepositoryBranchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */; };
 		F8E588902499B3290083BD93 /* UserRepositoryIssueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */; };
@@ -135,6 +137,8 @@
 		F8D2FA02249E04F50029FD63 /* XCGitHubUserRepositoryTestes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCGitHubUserRepositoryTestes.swift; sourceTree = "<group>"; };
 		F8D2FA04249E1B260029FD63 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		F8D2FA06249E1EBF0029FD63 /* XCGitHubProfileRepositoriy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCGitHubProfileRepositoriy.swift; sourceTree = "<group>"; };
+		F8D2FA09249E20620029FD63 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		F8D2FA0B249E271C0029FD63 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 		F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryDetailView.swift; sourceTree = "<group>"; };
 		F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryBranchListView.swift; sourceTree = "<group>"; };
 		F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryIssueListView.swift; sourceTree = "<group>"; };
@@ -226,12 +230,13 @@
 		F82103B92499697B00B1A211 /* ZarinPal-Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				F8D2F9FE249DFADF0029FD63 /* Utitlies */,
-				F85513C22499ED50006F309D /* Constant */,
 				F875B8D024996B420052C1DC /* Views */,
+				F8D2FA08249E202F0029FD63 /* ViewModels */,
 				F85513B92499E069006F309D /* Models */,
 				F86A2115249A476900C8AE69 /* Repositories */,
 				F85513B82499D136006F309D /* Service */,
+				F8D2F9FE249DFADF0029FD63 /* Utitlies */,
+				F85513C22499ED50006F309D /* Constant */,
 				F82103BA2499697B00B1A211 /* AppDelegate.swift */,
 				F82103C02499697D00B1A211 /* Assets.xcassets */,
 				F82103C82499697D00B1A211 /* Info.plist */,
@@ -400,6 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				F8D2F9FF249DFAF30029FD63 /* GitHubGraphQLFactory.swift */,
+				F8D2FA0B249E271C0029FD63 /* AppDIContainer.swift */,
 			);
 			path = Utitlies;
 			sourceTree = "<group>";
@@ -411,6 +417,14 @@
 				F8D2FA06249E1EBF0029FD63 /* XCGitHubProfileRepositoriy.swift */,
 			);
 			path = RepositoriesTestes;
+			sourceTree = "<group>";
+		};
+		F8D2FA08249E202F0029FD63 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2FA09249E20620029FD63 /* AppViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -686,6 +700,7 @@
 				F85513D5249A1436006F309D /* Authentication.swift in Sources */,
 				F85513C42499ED5B006F309D /* AppConfig.swift in Sources */,
 				F82103BB2499697B00B1A211 /* AppDelegate.swift in Sources */,
+				F8D2FA0C249E271C0029FD63 /* AppDIContainer.swift in Sources */,
 				F86A2119249A498C00C8AE69 /* AuthenticationRepository.swift in Sources */,
 				F85513D1249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift in Sources */,
 				F80E3127249A54440092000F /* GitHubUserProfileRepository.swift in Sources */,
@@ -700,6 +715,7 @@
 				F87C13F424997779002170B9 /* AuthenticationView.swift in Sources */,
 				F85513CD249A06E9006F309D /* KeyChainStorage.swift in Sources */,
 				F85513C9249A04F4006F309D /* Storable.swift in Sources */,
+				F8D2FA0A249E20620029FD63 /* AppViewModel.swift in Sources */,
 				F85513CF249A0F7F006F309D /* OAuthCredential.swift in Sources */,
 				F85513C62499F71B006F309D /* INetworkServiceEndpoint.swift in Sources */,
 				F80E3125249A51040092000F /* GitHubUserRepository.swift in Sources */,
