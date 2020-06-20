@@ -10,6 +10,7 @@ import Foundation
 
 protocol Storage {
     
+    @discardableResult
     /// <#Description#>
     /// - Parameters:
     ///   - object: <#object description#>
@@ -22,6 +23,8 @@ protocol Storage {
     ///   - forKey: <#forKey description#>
     func retreive<T: Storable>(type:T.Type, forKey key: String) -> T?
     
+    @discardableResult
+    func clearAll() -> Bool
 }
 
 protocol SecureStorage: Storage {

@@ -68,4 +68,16 @@ struct KeyChainStorage: SecureStorage {
         
     }
     
+    @discardableResult
+    func clearAll() -> Bool {
+        do {
+            try keychain.synchronizable(true)
+                .removeAll()
+            return true
+        }catch let error {
+            print("error \(error)")
+            return false
+        }
+    }
+    
 }

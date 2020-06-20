@@ -25,7 +25,7 @@ class AppViewModel: ObservableObject {
         case recieved(code: String)
     }
     
-    private let authentication : AuthenticationUseCase
+    let authentication : AuthenticationUseCase
     
     let disposeBag = DisposeBag()
     
