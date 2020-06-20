@@ -44,6 +44,11 @@
 		F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */; };
 		F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */; };
 		F8CF16C524998FBD00464F90 /* RepositoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF16C424998FBD00464F90 /* RepositoryData.swift */; };
+		F8D2F9F3249DE3000029FD63 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2F9F2249DE3000029FD63 /* Repository.swift */; };
+		F8D2F9F5249DE30B0029FD63 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2F9F4249DE30B0029FD63 /* Pagination.swift */; };
+		F8D2F9F7249DE3620029FD63 /* Respositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2F9F6249DE3620029FD63 /* Respositories.swift */; };
+		F8D2F9FA249DE62A0029FD63 /* GraphQLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2F9F9249DE62A0029FD63 /* GraphQLResponse.swift */; };
+		F8D2F9FD249DED4C0029FD63 /* XCRespositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2F9FC249DED4C0029FD63 /* XCRespositoryTests.swift */; };
 		F8E5888C2499A3070083BD93 /* UserRepositoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */; };
 		F8E5888E2499B3130083BD93 /* UserRepositoryBranchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */; };
 		F8E588902499B3290083BD93 /* UserRepositoryIssueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */; };
@@ -117,6 +122,11 @@
 		F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryListView.swift; sourceTree = "<group>"; };
 		F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryRowView.swift; sourceTree = "<group>"; };
 		F8CF16C424998FBD00464F90 /* RepositoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryData.swift; sourceTree = "<group>"; };
+		F8D2F9F2249DE3000029FD63 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		F8D2F9F4249DE30B0029FD63 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		F8D2F9F6249DE3620029FD63 /* Respositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Respositories.swift; sourceTree = "<group>"; };
+		F8D2F9F9249DE62A0029FD63 /* GraphQLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLResponse.swift; sourceTree = "<group>"; };
+		F8D2F9FC249DED4C0029FD63 /* XCRespositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCRespositoryTests.swift; sourceTree = "<group>"; };
 		F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryDetailView.swift; sourceTree = "<group>"; };
 		F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryBranchListView.swift; sourceTree = "<group>"; };
 		F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryIssueListView.swift; sourceTree = "<group>"; };
@@ -235,6 +245,7 @@
 		F82103D02499697D00B1A211 /* ZarinPal-ChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				F8D2F9FB249DED2F0029FD63 /* Model Decoding Testes */,
 				F8853320249DAC9200B9CAD7 /* AuthenticatorHelper */,
 				F82103D12499697D00B1A211 /* ZarinPal_ChallengeTests.swift */,
 				F82103D32499697D00B1A211 /* Info.plist */,
@@ -266,6 +277,10 @@
 		F85513B92499E069006F309D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F8D2F9F8249DE60C0029FD63 /* API Response */,
+				F8D2F9F6249DE3620029FD63 /* Respositories.swift */,
+				F8D2F9F2249DE3000029FD63 /* Repository.swift */,
+				F8D2F9F4249DE30B0029FD63 /* Pagination.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -352,6 +367,22 @@
 				F8853321249DACA700B9CAD7 /* XCAuthenticatorHelper.swift */,
 			);
 			path = AuthenticatorHelper;
+			sourceTree = "<group>";
+		};
+		F8D2F9F8249DE60C0029FD63 /* API Response */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2F9F9249DE62A0029FD63 /* GraphQLResponse.swift */,
+			);
+			path = "API Response";
+			sourceTree = "<group>";
+		};
+		F8D2F9FB249DED2F0029FD63 /* Model Decoding Testes */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2F9FC249DED4C0029FD63 /* XCRespositoryTests.swift */,
+			);
+			path = "Model Decoding Testes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -611,7 +642,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D2F9F3249DE3000029FD63 /* Repository.swift in Sources */,
 				F8E588922499B33F0083BD93 /* UserRepositoryPullRequestListView.swift in Sources */,
+				F8D2F9FA249DE62A0029FD63 /* GraphQLResponse.swift in Sources */,
 				F8E588902499B3290083BD93 /* UserRepositoryIssueListView.swift in Sources */,
 				F85513DB249A2697006F309D /* AuthenticationService.swift in Sources */,
 				F85513BF2499E5F6006F309D /* IGraphQLQueryRequest.swift in Sources */,
@@ -627,10 +660,12 @@
 				F86A2119249A498C00C8AE69 /* AuthenticationRepository.swift in Sources */,
 				F85513D1249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift in Sources */,
 				F80E3127249A54440092000F /* GitHubUserProfileRepository.swift in Sources */,
+				F8D2F9F7249DE3620029FD63 /* Respositories.swift in Sources */,
 				F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */,
 				F82103BD2499697B00B1A211 /* SceneDelegate.swift in Sources */,
 				F84D0AC62499BD0600B88CA0 /* UserProfileView.swift in Sources */,
 				F85513D7249A162D006F309D /* AppClientCredential.swift in Sources */,
+				F8D2F9F5249DE30B0029FD63 /* Pagination.swift in Sources */,
 				F8E5888E2499B3130083BD93 /* UserRepositoryBranchListView.swift in Sources */,
 				F87C13F424997779002170B9 /* AuthenticationView.swift in Sources */,
 				F85513CD249A06E9006F309D /* KeyChainStorage.swift in Sources */,
@@ -651,6 +686,7 @@
 				F85513D9249A2660006F309D /* XCAuthenticationService.swift in Sources */,
 				F82103D22499697D00B1A211 /* ZarinPal_ChallengeTests.swift in Sources */,
 				F8853322249DACA700B9CAD7 /* XCAuthenticatorHelper.swift in Sources */,
+				F8D2F9FD249DED4C0029FD63 /* XCRespositoryTests.swift in Sources */,
 				F8853324249DADEA00B9CAD7 /* XCNetworkServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
