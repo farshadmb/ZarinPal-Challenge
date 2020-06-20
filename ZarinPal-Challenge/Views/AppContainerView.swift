@@ -17,7 +17,7 @@ struct AppContainerView: View {
         
         switch viewModel.state {
         case .authorized:
-            return AnyView(UserRepositoryListView(items: []))
+            return AnyView(UserRepositoryListView(viewModel: UserRepositoryListViewModel(repositoriesUseCase: AppDIContainer.userRepositoryUseCases)))
         case .notAuthorized:
             return AnyView(AuthenticationView(viewModel: AuthenticationViewModel(authentication: viewModel.authentication)))
         }

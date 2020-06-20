@@ -36,7 +36,7 @@ struct GitHubGraphQLFactory {
                         }
                     }
                     pageInfo {
-                        endCursor
+                        startCursor
                         hasNextPage
                         hasPreviousPage
                     }

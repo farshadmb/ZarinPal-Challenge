@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 struct AppDIContainer {
     
@@ -36,7 +37,10 @@ struct AppDIContainer {
     }()
     
     static let networkService: NetworkServiceInterceptable = {
-        return APIClient.default
+        let session = Session()
+        session.sessionConfiguration.requestCachePolicy = .reloadIgnoringLocalCacheData
+        let apiClient = APIClient(session: session, decoder: APIClient.default.decoder)
+        return apiClient
     }()
     
     ////////////////////////////////////////////////////////////////
