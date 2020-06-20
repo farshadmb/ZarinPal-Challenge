@@ -1,0 +1,1101 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		416C5FE755E5216AED1BAF14 /* Pods_ZarinPal_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C80E9549AA99FC5A12DA87 /* Pods_ZarinPal_ChallengeTests.framework */; };
+		59524F0874BF6BC61810B7B9 /* Pods_ZarinPal_Challenge_ZarinPal_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32A2FAF08B9C369DAA373CE /* Pods_ZarinPal_Challenge_ZarinPal_ChallengeUITests.framework */; };
+		C3AF596A478FF49881895C5E /* Pods_ZarinPal_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212768EA85C2BD99963F3575 /* Pods_ZarinPal_Challenge.framework */; };
+		F80E3125249A51040092000F /* GitHubUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80E3124249A51040092000F /* GitHubUserRepository.swift */; };
+		F80E3127249A54440092000F /* GitHubUserProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80E3126249A54440092000F /* GitHubUserProfileRepository.swift */; };
+		F82103BB2499697B00B1A211 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103BA2499697B00B1A211 /* AppDelegate.swift */; };
+		F82103BD2499697B00B1A211 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103BC2499697B00B1A211 /* SceneDelegate.swift */; };
+		F82103C12499697D00B1A211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82103C02499697D00B1A211 /* Assets.xcassets */; };
+		F82103C42499697D00B1A211 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82103C32499697D00B1A211 /* Preview Assets.xcassets */; };
+		F82103C72499697D00B1A211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82103C52499697D00B1A211 /* LaunchScreen.storyboard */; };
+		F82103D22499697D00B1A211 /* ZarinPal_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103D12499697D00B1A211 /* ZarinPal_ChallengeTests.swift */; };
+		F82103DD2499697D00B1A211 /* ZarinPal_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82103DC2499697D00B1A211 /* ZarinPal_ChallengeUITests.swift */; };
+		F84D0AC62499BD0600B88CA0 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D0AC52499BD0600B88CA0 /* UserProfileView.swift */; };
+		F85513BD2499E566006F309D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513BC2499E566006F309D /* NetworkService.swift */; };
+		F85513BF2499E5F6006F309D /* IGraphQLQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513BE2499E5F6006F309D /* IGraphQLQueryRequest.swift */; };
+		F85513C12499EC0C006F309D /* APIClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513C02499EC0C006F309D /* APIClientService.swift */; };
+		F85513C42499ED5B006F309D /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513C32499ED5B006F309D /* AppConfig.swift */; };
+		F85513C62499F71B006F309D /* INetworkServiceEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513C52499F71B006F309D /* INetworkServiceEndpoint.swift */; };
+		F85513C9249A04F4006F309D /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513C8249A04F4006F309D /* Storable.swift */; };
+		F85513CB249A04FD006F309D /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513CA249A04FD006F309D /* Storage.swift */; };
+		F85513CD249A06E9006F309D /* KeyChainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513CC249A06E9006F309D /* KeyChainStorage.swift */; };
+		F85513CF249A0F7F006F309D /* OAuthCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513CE249A0F7F006F309D /* OAuthCredential.swift */; };
+		F85513D1249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D0249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift */; };
+		F85513D3249A126D006F309D /* AuthenticationService+Authentictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D2249A126D006F309D /* AuthenticationService+Authentictor.swift */; };
+		F85513D5249A1436006F309D /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D4249A1436006F309D /* Authentication.swift */; };
+		F85513D7249A162D006F309D /* AppClientCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D6249A162D006F309D /* AppClientCredential.swift */; };
+		F85513D9249A2660006F309D /* XCAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513D8249A2660006F309D /* XCAuthenticationService.swift */; };
+		F85513DB249A2697006F309D /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85513DA249A2697006F309D /* AuthenticationService.swift */; };
+		F86A2117249A480A00C8AE69 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A2116249A480A00C8AE69 /* BaseRepository.swift */; };
+		F86A2119249A498C00C8AE69 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A2118249A498C00C8AE69 /* AuthenticationRepository.swift */; };
+		F86A211C249A4C4200C8AE69 /* AuthenticationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A211B249A4C4200C8AE69 /* AuthenticationStatus.swift */; };
+		F87C13F424997779002170B9 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C13F324997779002170B9 /* AuthenticationView.swift */; };
+		F8853322249DACA700B9CAD7 /* XCAuthenticatorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8853321249DACA700B9CAD7 /* XCAuthenticatorHelper.swift */; };
+		F8853324249DADEA00B9CAD7 /* XCNetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8853323249DADEA00B9CAD7 /* XCNetworkServiceTests.swift */; };
+		F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */; };
+		F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */; };
+		F8CF16C524998FBD00464F90 /* RepositoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF16C424998FBD00464F90 /* RepositoryData.swift */; };
+		F8D2F9F3249DE3000029FD63 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2F9F2249DE3000029FD63 /* Repository.swift */; };
+		F8D2F9F5249DE30B0029FD63 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2F9F4249DE30B0029FD63 /* Pagination.swift */; };
+		F8D2F9F7249DE3620029FD63 /* Respositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2F9F6249DE3620029FD63 /* Respositories.swift */; };
+		F8D2F9FA249DE62A0029FD63 /* GraphQLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2F9F9249DE62A0029FD63 /* GraphQLResponse.swift */; };
+		F8D2F9FD249DED4C0029FD63 /* XCRespositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2F9FC249DED4C0029FD63 /* XCRespositoryTests.swift */; };
+		F8D2FA00249DFAF30029FD63 /* GitHubGraphQLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2F9FF249DFAF30029FD63 /* GitHubGraphQLFactory.swift */; };
+		F8D2FA03249E04F50029FD63 /* XCGitHubUserRepositoryTestes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA02249E04F50029FD63 /* XCGitHubUserRepositoryTestes.swift */; };
+		F8D2FA05249E1B260029FD63 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA04249E1B260029FD63 /* UserProfile.swift */; };
+		F8D2FA07249E1EBF0029FD63 /* XCGitHubProfileRepositoriy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA06249E1EBF0029FD63 /* XCGitHubProfileRepositoriy.swift */; };
+		F8D2FA0A249E20620029FD63 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA09249E20620029FD63 /* AppViewModel.swift */; };
+		F8D2FA0C249E271C0029FD63 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA0B249E271C0029FD63 /* AppDIContainer.swift */; };
+		F8D2FA0E249E2C0A0029FD63 /* AppContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA0D249E2C0A0029FD63 /* AppContainerView.swift */; };
+		F8D2FA10249E2F180029FD63 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA0F249E2F180029FD63 /* AuthenticationViewModel.swift */; };
+		F8D2FA12249E31950029FD63 /* UserRepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA11249E31950029FD63 /* UserRepositoryListViewModel.swift */; };
+		F8D2FA14249E31C30029FD63 /* UserRepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA13249E31C30029FD63 /* UserRepositoryViewModel.swift */; };
+		F8D2FA16249E33A50029FD63 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA15249E33A50029FD63 /* UIColor+Hex.swift */; };
+		F8D2FA19249E382F0029FD63 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA18249E382F0029FD63 /* ActivityIndicatorView.swift */; };
+		F8D2FA1B249E64CD0029FD63 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2FA1A249E64CD0029FD63 /* UserProfileViewModel.swift */; };
+		F8E5888C2499A3070083BD93 /* UserRepositoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */; };
+		F8E5888E2499B3130083BD93 /* UserRepositoryBranchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */; };
+		F8E588902499B3290083BD93 /* UserRepositoryIssueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */; };
+		F8E588922499B33F0083BD93 /* UserRepositoryPullRequestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E588912499B33F0083BD93 /* UserRepositoryPullRequestListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F82103CE2499697D00B1A211 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F82103AF2499697B00B1A211 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82103B62499697B00B1A211;
+			remoteInfo = "ZarinPal-Challenge";
+		};
+		F82103D92499697D00B1A211 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F82103AF2499697B00B1A211 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82103B62499697B00B1A211;
+			remoteInfo = "ZarinPal-Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01C79CCBB42EF3F48B5FEA9D /* Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		212768EA85C2BD99963F3575 /* Pods_ZarinPal_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZarinPal_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4422C404E17008BCF5A7C01A /* Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5D53BEFB29F18DA61ACA24E1 /* Pods-ZarinPal-ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZarinPal-ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-ZarinPal-ChallengeTests/Pods-ZarinPal-ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		6AD88D0CDD3BB030A96991E5 /* Pods-ZarinPal-ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZarinPal-ChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-ZarinPal-ChallengeTests/Pods-ZarinPal-ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		922C0A0B8F8339653F17637D /* Pods-ZarinPal-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZarinPal-Challenge.debug.xcconfig"; path = "Target Support Files/Pods-ZarinPal-Challenge/Pods-ZarinPal-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		D4C97843DCCEF859AE752EC9 /* Pods-ZarinPal-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZarinPal-Challenge.release.xcconfig"; path = "Target Support Files/Pods-ZarinPal-Challenge/Pods-ZarinPal-Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		F2C80E9549AA99FC5A12DA87 /* Pods_ZarinPal_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZarinPal_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32A2FAF08B9C369DAA373CE /* Pods_ZarinPal_Challenge_ZarinPal_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZarinPal_Challenge_ZarinPal_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80E3124249A51040092000F /* GitHubUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserRepository.swift; sourceTree = "<group>"; };
+		F80E3126249A54440092000F /* GitHubUserProfileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserProfileRepository.swift; sourceTree = "<group>"; };
+		F82103B72499697B00B1A211 /* ZarinPal-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZarinPal-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82103BA2499697B00B1A211 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F82103BC2499697B00B1A211 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F82103C02499697D00B1A211 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F82103C32499697D00B1A211 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F82103C62499697D00B1A211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F82103C82499697D00B1A211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82103CD2499697D00B1A211 /* ZarinPal-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZarinPal-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82103D12499697D00B1A211 /* ZarinPal_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZarinPal_ChallengeTests.swift; sourceTree = "<group>"; };
+		F82103D32499697D00B1A211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82103D82499697D00B1A211 /* ZarinPal-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZarinPal-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82103DC2499697D00B1A211 /* ZarinPal_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZarinPal_ChallengeUITests.swift; sourceTree = "<group>"; };
+		F82103DE2499697D00B1A211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F84D0AC52499BD0600B88CA0 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		F85513BC2499E566006F309D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F85513BE2499E5F6006F309D /* IGraphQLQueryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGraphQLQueryRequest.swift; sourceTree = "<group>"; };
+		F85513C02499EC0C006F309D /* APIClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientService.swift; sourceTree = "<group>"; };
+		F85513C32499ED5B006F309D /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		F85513C52499F71B006F309D /* INetworkServiceEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INetworkServiceEndpoint.swift; sourceTree = "<group>"; };
+		F85513C8249A04F4006F309D /* Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
+		F85513CA249A04FD006F309D /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		F85513CC249A06E9006F309D /* KeyChainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainStorage.swift; sourceTree = "<group>"; };
+		F85513CE249A0F7F006F309D /* OAuthCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthCredential.swift; sourceTree = "<group>"; };
+		F85513D0249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OAuthCredential+AuthenticationCredential.swift"; sourceTree = "<group>"; };
+		F85513D2249A126D006F309D /* AuthenticationService+Authentictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationService+Authentictor.swift"; sourceTree = "<group>"; };
+		F85513D4249A1436006F309D /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		F85513D6249A162D006F309D /* AppClientCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClientCredential.swift; sourceTree = "<group>"; };
+		F85513D8249A2660006F309D /* XCAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCAuthenticationService.swift; sourceTree = "<group>"; };
+		F85513DA249A2697006F309D /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		F86A2116249A480A00C8AE69 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		F86A2118249A498C00C8AE69 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		F86A211B249A4C4200C8AE69 /* AuthenticationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationStatus.swift; sourceTree = "<group>"; };
+		F87C13F324997779002170B9 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		F8853321249DACA700B9CAD7 /* XCAuthenticatorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCAuthenticatorHelper.swift; sourceTree = "<group>"; };
+		F8853323249DADEA00B9CAD7 /* XCNetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCNetworkServiceTests.swift; sourceTree = "<group>"; };
+		F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryListView.swift; sourceTree = "<group>"; };
+		F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryRowView.swift; sourceTree = "<group>"; };
+		F8CF16C424998FBD00464F90 /* RepositoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryData.swift; sourceTree = "<group>"; };
+		F8D2F9F2249DE3000029FD63 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		F8D2F9F4249DE30B0029FD63 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		F8D2F9F6249DE3620029FD63 /* Respositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Respositories.swift; sourceTree = "<group>"; };
+		F8D2F9F9249DE62A0029FD63 /* GraphQLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLResponse.swift; sourceTree = "<group>"; };
+		F8D2F9FC249DED4C0029FD63 /* XCRespositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCRespositoryTests.swift; sourceTree = "<group>"; };
+		F8D2F9FF249DFAF30029FD63 /* GitHubGraphQLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubGraphQLFactory.swift; sourceTree = "<group>"; };
+		F8D2FA02249E04F50029FD63 /* XCGitHubUserRepositoryTestes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCGitHubUserRepositoryTestes.swift; sourceTree = "<group>"; };
+		F8D2FA04249E1B260029FD63 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		F8D2FA06249E1EBF0029FD63 /* XCGitHubProfileRepositoriy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCGitHubProfileRepositoriy.swift; sourceTree = "<group>"; };
+		F8D2FA09249E20620029FD63 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		F8D2FA0B249E271C0029FD63 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		F8D2FA0D249E2C0A0029FD63 /* AppContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainerView.swift; sourceTree = "<group>"; };
+		F8D2FA0F249E2F180029FD63 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		F8D2FA11249E31950029FD63 /* UserRepositoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryListViewModel.swift; sourceTree = "<group>"; };
+		F8D2FA13249E31C30029FD63 /* UserRepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryViewModel.swift; sourceTree = "<group>"; };
+		F8D2FA15249E33A50029FD63 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		F8D2FA18249E382F0029FD63 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		F8D2FA1A249E64CD0029FD63 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryDetailView.swift; sourceTree = "<group>"; };
+		F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryBranchListView.swift; sourceTree = "<group>"; };
+		F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryIssueListView.swift; sourceTree = "<group>"; };
+		F8E588912499B33F0083BD93 /* UserRepositoryPullRequestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryPullRequestListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F82103B42499697B00B1A211 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3AF596A478FF49881895C5E /* Pods_ZarinPal_Challenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82103CA2499697D00B1A211 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				416C5FE755E5216AED1BAF14 /* Pods_ZarinPal_ChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82103D52499697D00B1A211 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59524F0874BF6BC61810B7B9 /* Pods_ZarinPal_Challenge_ZarinPal_ChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10655C0D2542EB7A103801DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				922C0A0B8F8339653F17637D /* Pods-ZarinPal-Challenge.debug.xcconfig */,
+				D4C97843DCCEF859AE752EC9 /* Pods-ZarinPal-Challenge.release.xcconfig */,
+				01C79CCBB42EF3F48B5FEA9D /* Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests.debug.xcconfig */,
+				4422C404E17008BCF5A7C01A /* Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests.release.xcconfig */,
+				6AD88D0CDD3BB030A96991E5 /* Pods-ZarinPal-ChallengeTests.debug.xcconfig */,
+				5D53BEFB29F18DA61ACA24E1 /* Pods-ZarinPal-ChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		94553CC57F76E540FF3CA78E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				212768EA85C2BD99963F3575 /* Pods_ZarinPal_Challenge.framework */,
+				F32A2FAF08B9C369DAA373CE /* Pods_ZarinPal_Challenge_ZarinPal_ChallengeUITests.framework */,
+				F2C80E9549AA99FC5A12DA87 /* Pods_ZarinPal_ChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F80E3123249A50D50092000F /* GitHub */ = {
+			isa = PBXGroup;
+			children = (
+				F80E3124249A51040092000F /* GitHubUserRepository.swift */,
+				F80E3126249A54440092000F /* GitHubUserProfileRepository.swift */,
+			);
+			path = GitHub;
+			sourceTree = "<group>";
+		};
+		F82103AE2499697B00B1A211 = {
+			isa = PBXGroup;
+			children = (
+				F82103B92499697B00B1A211 /* ZarinPal-Challenge */,
+				F82103D02499697D00B1A211 /* ZarinPal-ChallengeTests */,
+				F82103DB2499697D00B1A211 /* ZarinPal-ChallengeUITests */,
+				F82103B82499697B00B1A211 /* Products */,
+				10655C0D2542EB7A103801DD /* Pods */,
+				94553CC57F76E540FF3CA78E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F82103B82499697B00B1A211 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F82103B72499697B00B1A211 /* ZarinPal-Challenge.app */,
+				F82103CD2499697D00B1A211 /* ZarinPal-ChallengeTests.xctest */,
+				F82103D82499697D00B1A211 /* ZarinPal-ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F82103B92499697B00B1A211 /* ZarinPal-Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				F875B8D024996B420052C1DC /* Views */,
+				F8D2FA08249E202F0029FD63 /* ViewModels */,
+				F85513B92499E069006F309D /* Models */,
+				F86A2115249A476900C8AE69 /* Repositories */,
+				F85513B82499D136006F309D /* Service */,
+				F8D2F9FE249DFADF0029FD63 /* Utitlies */,
+				F85513C22499ED50006F309D /* Constant */,
+				F82103BA2499697B00B1A211 /* AppDelegate.swift */,
+				F82103C02499697D00B1A211 /* Assets.xcassets */,
+				F82103C82499697D00B1A211 /* Info.plist */,
+				F82103C52499697D00B1A211 /* LaunchScreen.storyboard */,
+				F82103C22499697D00B1A211 /* Preview Content */,
+				F8CF16C424998FBD00464F90 /* RepositoryData.swift */,
+				F82103BC2499697B00B1A211 /* SceneDelegate.swift */,
+			);
+			path = "ZarinPal-Challenge";
+			sourceTree = "<group>";
+		};
+		F82103C22499697D00B1A211 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F82103C32499697D00B1A211 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F82103D02499697D00B1A211 /* ZarinPal-ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2FA01249E04C90029FD63 /* RepositoriesTestes */,
+				F8D2F9FB249DED2F0029FD63 /* Model Decoding Testes */,
+				F8853320249DAC9200B9CAD7 /* AuthenticatorHelper */,
+				F82103D12499697D00B1A211 /* ZarinPal_ChallengeTests.swift */,
+				F82103D32499697D00B1A211 /* Info.plist */,
+				F85513D8249A2660006F309D /* XCAuthenticationService.swift */,
+				F8853323249DADEA00B9CAD7 /* XCNetworkServiceTests.swift */,
+			);
+			path = "ZarinPal-ChallengeTests";
+			sourceTree = "<group>";
+		};
+		F82103DB2499697D00B1A211 /* ZarinPal-ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F82103DC2499697D00B1A211 /* ZarinPal_ChallengeUITests.swift */,
+				F82103DE2499697D00B1A211 /* Info.plist */,
+			);
+			path = "ZarinPal-ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		F85513B82499D136006F309D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F85513C7249A04D0006F309D /* Storage */,
+				F85513BB2499E40B006F309D /* Network */,
+				F85513BA2499E34F006F309D /* Authentication */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F85513B92499E069006F309D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2F9F8249DE60C0029FD63 /* API Response */,
+				F8D2F9F6249DE3620029FD63 /* Respositories.swift */,
+				F8D2F9F2249DE3000029FD63 /* Repository.swift */,
+				F8D2F9F4249DE30B0029FD63 /* Pagination.swift */,
+				F8D2FA04249E1B260029FD63 /* UserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F85513BA2499E34F006F309D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F85513D4249A1436006F309D /* Authentication.swift */,
+				F85513DA249A2697006F309D /* AuthenticationService.swift */,
+				F85513D2249A126D006F309D /* AuthenticationService+Authentictor.swift */,
+				F85513CE249A0F7F006F309D /* OAuthCredential.swift */,
+				F85513D0249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F85513BB2499E40B006F309D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F85513BC2499E566006F309D /* NetworkService.swift */,
+				F85513BE2499E5F6006F309D /* IGraphQLQueryRequest.swift */,
+				F85513C52499F71B006F309D /* INetworkServiceEndpoint.swift */,
+				F85513C02499EC0C006F309D /* APIClientService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F85513C22499ED50006F309D /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				F85513D6249A162D006F309D /* AppClientCredential.swift */,
+				F85513C32499ED5B006F309D /* AppConfig.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		F85513C7249A04D0006F309D /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				F85513C8249A04F4006F309D /* Storable.swift */,
+				F85513CA249A04FD006F309D /* Storage.swift */,
+				F85513CC249A06E9006F309D /* KeyChainStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		F86A2115249A476900C8AE69 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F80E3123249A50D50092000F /* GitHub */,
+				F86A211A249A4C2500C8AE69 /* Authentication */,
+				F86A2116249A480A00C8AE69 /* BaseRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F86A211A249A4C2500C8AE69 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F86A2118249A498C00C8AE69 /* AuthenticationRepository.swift */,
+				F86A211B249A4C4200C8AE69 /* AuthenticationStatus.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F875B8D024996B420052C1DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2FA17249E381D0029FD63 /* CustomView */,
+				F87C13F324997779002170B9 /* AuthenticationView.swift */,
+				F8C97436249989F800D6C0EF /* UserRepositoryListView.swift */,
+				F8C9743824998A0600D6C0EF /* UserRepositoryRowView.swift */,
+				F8E5888B2499A3070083BD93 /* UserRepositoryDetailView.swift */,
+				F8E5888D2499B3130083BD93 /* UserRepositoryBranchListView.swift */,
+				F8E5888F2499B3290083BD93 /* UserRepositoryIssueListView.swift */,
+				F8E588912499B33F0083BD93 /* UserRepositoryPullRequestListView.swift */,
+				F84D0AC52499BD0600B88CA0 /* UserProfileView.swift */,
+				F8D2FA0D249E2C0A0029FD63 /* AppContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8853320249DAC9200B9CAD7 /* AuthenticatorHelper */ = {
+			isa = PBXGroup;
+			children = (
+				F8853321249DACA700B9CAD7 /* XCAuthenticatorHelper.swift */,
+			);
+			path = AuthenticatorHelper;
+			sourceTree = "<group>";
+		};
+		F8D2F9F8249DE60C0029FD63 /* API Response */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2F9F9249DE62A0029FD63 /* GraphQLResponse.swift */,
+			);
+			path = "API Response";
+			sourceTree = "<group>";
+		};
+		F8D2F9FB249DED2F0029FD63 /* Model Decoding Testes */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2F9FC249DED4C0029FD63 /* XCRespositoryTests.swift */,
+			);
+			path = "Model Decoding Testes";
+			sourceTree = "<group>";
+		};
+		F8D2F9FE249DFADF0029FD63 /* Utitlies */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2F9FF249DFAF30029FD63 /* GitHubGraphQLFactory.swift */,
+				F8D2FA0B249E271C0029FD63 /* AppDIContainer.swift */,
+				F8D2FA15249E33A50029FD63 /* UIColor+Hex.swift */,
+			);
+			path = Utitlies;
+			sourceTree = "<group>";
+		};
+		F8D2FA01249E04C90029FD63 /* RepositoriesTestes */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2FA02249E04F50029FD63 /* XCGitHubUserRepositoryTestes.swift */,
+				F8D2FA06249E1EBF0029FD63 /* XCGitHubProfileRepositoriy.swift */,
+			);
+			path = RepositoriesTestes;
+			sourceTree = "<group>";
+		};
+		F8D2FA08249E202F0029FD63 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2FA09249E20620029FD63 /* AppViewModel.swift */,
+				F8D2FA0F249E2F180029FD63 /* AuthenticationViewModel.swift */,
+				F8D2FA11249E31950029FD63 /* UserRepositoryListViewModel.swift */,
+				F8D2FA13249E31C30029FD63 /* UserRepositoryViewModel.swift */,
+				F8D2FA1A249E64CD0029FD63 /* UserProfileViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F8D2FA17249E381D0029FD63 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2FA18249E382F0029FD63 /* ActivityIndicatorView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F82103B62499697B00B1A211 /* ZarinPal-Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82103E12499697D00B1A211 /* Build configuration list for PBXNativeTarget "ZarinPal-Challenge" */;
+			buildPhases = (
+				130565AA3D8541D872E4341B /* [CP] Check Pods Manifest.lock */,
+				F82103B32499697B00B1A211 /* Sources */,
+				F82103B42499697B00B1A211 /* Frameworks */,
+				F82103B52499697B00B1A211 /* Resources */,
+				0A09E625E6CAF030614FFD4E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZarinPal-Challenge";
+			productName = "ZarinPal-Challenge";
+			productReference = F82103B72499697B00B1A211 /* ZarinPal-Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F82103CC2499697D00B1A211 /* ZarinPal-ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82103E42499697D00B1A211 /* Build configuration list for PBXNativeTarget "ZarinPal-ChallengeTests" */;
+			buildPhases = (
+				56158881A1AABA00406DC675 /* [CP] Check Pods Manifest.lock */,
+				F82103C92499697D00B1A211 /* Sources */,
+				F82103CA2499697D00B1A211 /* Frameworks */,
+				F82103CB2499697D00B1A211 /* Resources */,
+				2D9761E982B2F1B9F58B004B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F82103CF2499697D00B1A211 /* PBXTargetDependency */,
+			);
+			name = "ZarinPal-ChallengeTests";
+			productName = "ZarinPal-ChallengeTests";
+			productReference = F82103CD2499697D00B1A211 /* ZarinPal-ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F82103D72499697D00B1A211 /* ZarinPal-ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82103E72499697D00B1A211 /* Build configuration list for PBXNativeTarget "ZarinPal-ChallengeUITests" */;
+			buildPhases = (
+				5D04DFC7F9ADA7A1DB16FD0B /* [CP] Check Pods Manifest.lock */,
+				F82103D42499697D00B1A211 /* Sources */,
+				F82103D52499697D00B1A211 /* Frameworks */,
+				F82103D62499697D00B1A211 /* Resources */,
+				94C294ECA6C35C9EFCEF3280 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F82103DA2499697D00B1A211 /* PBXTargetDependency */,
+			);
+			name = "ZarinPal-ChallengeUITests";
+			productName = "ZarinPal-ChallengeUITests";
+			productReference = F82103D82499697D00B1A211 /* ZarinPal-ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F82103AF2499697B00B1A211 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Farshad Mousalou";
+				TargetAttributes = {
+					F82103B62499697B00B1A211 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					F82103CC2499697D00B1A211 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = F82103B62499697B00B1A211;
+					};
+					F82103D72499697D00B1A211 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = F82103B62499697B00B1A211;
+					};
+				};
+			};
+			buildConfigurationList = F82103B22499697B00B1A211 /* Build configuration list for PBXProject "ZarinPal-Challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F82103AE2499697B00B1A211;
+			productRefGroup = F82103B82499697B00B1A211 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F82103B62499697B00B1A211 /* ZarinPal-Challenge */,
+				F82103CC2499697D00B1A211 /* ZarinPal-ChallengeTests */,
+				F82103D72499697D00B1A211 /* ZarinPal-ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F82103B52499697B00B1A211 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82103C72499697D00B1A211 /* LaunchScreen.storyboard in Resources */,
+				F82103C42499697D00B1A211 /* Preview Assets.xcassets in Resources */,
+				F82103C12499697D00B1A211 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82103CB2499697D00B1A211 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82103D62499697D00B1A211 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A09E625E6CAF030614FFD4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-Challenge/Pods-ZarinPal-Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-Challenge/Pods-ZarinPal-Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-Challenge/Pods-ZarinPal-Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		130565AA3D8541D872E4341B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZarinPal-Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D9761E982B2F1B9F58B004B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-ChallengeTests/Pods-ZarinPal-ChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-ChallengeTests/Pods-ZarinPal-ChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-ChallengeTests/Pods-ZarinPal-ChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56158881A1AABA00406DC675 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZarinPal-ChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D04DFC7F9ADA7A1DB16FD0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94C294ECA6C35C9EFCEF3280 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests/Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F82103B32499697B00B1A211 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D2F9F3249DE3000029FD63 /* Repository.swift in Sources */,
+				F8E588922499B33F0083BD93 /* UserRepositoryPullRequestListView.swift in Sources */,
+				F8D2F9FA249DE62A0029FD63 /* GraphQLResponse.swift in Sources */,
+				F8E588902499B3290083BD93 /* UserRepositoryIssueListView.swift in Sources */,
+				F85513DB249A2697006F309D /* AuthenticationService.swift in Sources */,
+				F85513BF2499E5F6006F309D /* IGraphQLQueryRequest.swift in Sources */,
+				F8C9743924998A0600D6C0EF /* UserRepositoryRowView.swift in Sources */,
+				F86A211C249A4C4200C8AE69 /* AuthenticationStatus.swift in Sources */,
+				F8D2FA12249E31950029FD63 /* UserRepositoryListViewModel.swift in Sources */,
+				F8D2FA05249E1B260029FD63 /* UserProfile.swift in Sources */,
+				F8E5888C2499A3070083BD93 /* UserRepositoryDetailView.swift in Sources */,
+				F85513D3249A126D006F309D /* AuthenticationService+Authentictor.swift in Sources */,
+				F85513CB249A04FD006F309D /* Storage.swift in Sources */,
+				F8D2FA14249E31C30029FD63 /* UserRepositoryViewModel.swift in Sources */,
+				F85513C12499EC0C006F309D /* APIClientService.swift in Sources */,
+				F85513D5249A1436006F309D /* Authentication.swift in Sources */,
+				F85513C42499ED5B006F309D /* AppConfig.swift in Sources */,
+				F8D2FA1B249E64CD0029FD63 /* UserProfileViewModel.swift in Sources */,
+				F82103BB2499697B00B1A211 /* AppDelegate.swift in Sources */,
+				F8D2FA0C249E271C0029FD63 /* AppDIContainer.swift in Sources */,
+				F86A2119249A498C00C8AE69 /* AuthenticationRepository.swift in Sources */,
+				F8D2FA0E249E2C0A0029FD63 /* AppContainerView.swift in Sources */,
+				F85513D1249A1080006F309D /* OAuthCredential+AuthenticationCredential.swift in Sources */,
+				F80E3127249A54440092000F /* GitHubUserProfileRepository.swift in Sources */,
+				F8D2F9F7249DE3620029FD63 /* Respositories.swift in Sources */,
+				F8C97437249989F800D6C0EF /* UserRepositoryListView.swift in Sources */,
+				F82103BD2499697B00B1A211 /* SceneDelegate.swift in Sources */,
+				F84D0AC62499BD0600B88CA0 /* UserProfileView.swift in Sources */,
+				F85513D7249A162D006F309D /* AppClientCredential.swift in Sources */,
+				F8D2F9F5249DE30B0029FD63 /* Pagination.swift in Sources */,
+				F8D2FA00249DFAF30029FD63 /* GitHubGraphQLFactory.swift in Sources */,
+				F8D2FA16249E33A50029FD63 /* UIColor+Hex.swift in Sources */,
+				F8E5888E2499B3130083BD93 /* UserRepositoryBranchListView.swift in Sources */,
+				F87C13F424997779002170B9 /* AuthenticationView.swift in Sources */,
+				F85513CD249A06E9006F309D /* KeyChainStorage.swift in Sources */,
+				F85513C9249A04F4006F309D /* Storable.swift in Sources */,
+				F8D2FA0A249E20620029FD63 /* AppViewModel.swift in Sources */,
+				F85513CF249A0F7F006F309D /* OAuthCredential.swift in Sources */,
+				F85513C62499F71B006F309D /* INetworkServiceEndpoint.swift in Sources */,
+				F80E3125249A51040092000F /* GitHubUserRepository.swift in Sources */,
+				F8D2FA19249E382F0029FD63 /* ActivityIndicatorView.swift in Sources */,
+				F8D2FA10249E2F180029FD63 /* AuthenticationViewModel.swift in Sources */,
+				F85513BD2499E566006F309D /* NetworkService.swift in Sources */,
+				F86A2117249A480A00C8AE69 /* BaseRepository.swift in Sources */,
+				F8CF16C524998FBD00464F90 /* RepositoryData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82103C92499697D00B1A211 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85513D9249A2660006F309D /* XCAuthenticationService.swift in Sources */,
+				F82103D22499697D00B1A211 /* ZarinPal_ChallengeTests.swift in Sources */,
+				F8D2FA03249E04F50029FD63 /* XCGitHubUserRepositoryTestes.swift in Sources */,
+				F8D2FA07249E1EBF0029FD63 /* XCGitHubProfileRepositoriy.swift in Sources */,
+				F8853322249DACA700B9CAD7 /* XCAuthenticatorHelper.swift in Sources */,
+				F8D2F9FD249DED4C0029FD63 /* XCRespositoryTests.swift in Sources */,
+				F8853324249DADEA00B9CAD7 /* XCNetworkServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82103D42499697D00B1A211 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82103DD2499697D00B1A211 /* ZarinPal_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F82103CF2499697D00B1A211 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82103B62499697B00B1A211 /* ZarinPal-Challenge */;
+			targetProxy = F82103CE2499697D00B1A211 /* PBXContainerItemProxy */;
+		};
+		F82103DA2499697D00B1A211 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82103B62499697B00B1A211 /* ZarinPal-Challenge */;
+			targetProxy = F82103D92499697D00B1A211 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F82103C52499697D00B1A211 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F82103C62499697D00B1A211 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F82103DF2499697D00B1A211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F82103E02499697D00B1A211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F82103E22499697D00B1A211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 922C0A0B8F8339653F17637D /* Pods-ZarinPal-Challenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ZarinPal-Challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ZarinPal-Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ifarshad.ZarinPal-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F82103E32499697D00B1A211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C97843DCCEF859AE752EC9 /* Pods-ZarinPal-Challenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ZarinPal-Challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ZarinPal-Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ifarshad.ZarinPal-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F82103E52499697D00B1A211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AD88D0CDD3BB030A96991E5 /* Pods-ZarinPal-ChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638B4QA28J;
+				INFOPLIST_FILE = "ZarinPal-ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ifarshad.ZarinPal-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZarinPal-Challenge.app/ZarinPal-Challenge";
+			};
+			name = Debug;
+		};
+		F82103E62499697D00B1A211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D53BEFB29F18DA61ACA24E1 /* Pods-ZarinPal-ChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638B4QA28J;
+				INFOPLIST_FILE = "ZarinPal-ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ifarshad.ZarinPal-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZarinPal-Challenge.app/ZarinPal-Challenge";
+			};
+			name = Release;
+		};
+		F82103E82499697D00B1A211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01C79CCBB42EF3F48B5FEA9D /* Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638B4QA28J;
+				INFOPLIST_FILE = "ZarinPal-ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ifarshad.ZarinPal-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ZarinPal-Challenge";
+			};
+			name = Debug;
+		};
+		F82103E92499697D00B1A211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4422C404E17008BCF5A7C01A /* Pods-ZarinPal-Challenge-ZarinPal-ChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638B4QA28J;
+				INFOPLIST_FILE = "ZarinPal-ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ifarshad.ZarinPal-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ZarinPal-Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F82103B22499697B00B1A211 /* Build configuration list for PBXProject "ZarinPal-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82103DF2499697D00B1A211 /* Debug */,
+				F82103E02499697D00B1A211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F82103E12499697D00B1A211 /* Build configuration list for PBXNativeTarget "ZarinPal-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82103E22499697D00B1A211 /* Debug */,
+				F82103E32499697D00B1A211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F82103E42499697D00B1A211 /* Build configuration list for PBXNativeTarget "ZarinPal-ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82103E52499697D00B1A211 /* Debug */,
+				F82103E62499697D00B1A211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F82103E72499697D00B1A211 /* Build configuration list for PBXNativeTarget "ZarinPal-ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82103E82499697D00B1A211 /* Debug */,
+				F82103E92499697D00B1A211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F82103AF2499697B00B1A211 /* Project object */;
+}
