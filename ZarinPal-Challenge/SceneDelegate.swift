@@ -50,7 +50,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
-            _ = self.authentication.requestClientAuthorize(credential: AppConfig.clientCredetianl)
+            _ = self.authentication.buildAuthentication(credential: AppConfig.clientCredetianl)
         }
     }
 
@@ -87,7 +87,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let url = URLContexts.first?.url else { return }
         
         let queryItems = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems
-        print(queryItems)
         if queryItems?.contains(where: { $0.name == "error" }) == true  {
             
             let alert = UIAlertController(title: queryItems?.first(where: { $0.name == "error" })?.value,
@@ -101,7 +100,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 .rootViewController?.present(alert, animated: true, completion: nil)
             
         }else if let code = queryItems?.first(where: { $0.name == "code"}), let codeValue = code.value  {
-            _ = authentication.requestAccessToken(with: codeValue, client: AppConfig.clientCredetianl).subscribe()
+            print("accessCode =>",codeValue)
         }
     }
 

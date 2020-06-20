@@ -14,12 +14,12 @@ protocol Authentication {
     
     var isAuthenticated: Observable<Bool> { get }
     
-    func requestClientAuthorize(credential: AppClientCredential) -> Observable<Bool>
+    func buildAuthentication(credential: AppClientCredential) -> Observable<URL?>
     
     func requestAccessToken(with code: String, client credential: AppClientCredential) -> Observable<Bool>
     
 }
 
-protocol AuthenticationInterceptable : RequestInterceptor {
+protocol AuthenticationInterceptable : Authentication, RequestInterceptor {
     
 }

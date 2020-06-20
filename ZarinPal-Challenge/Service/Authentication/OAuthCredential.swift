@@ -28,7 +28,7 @@ struct OAuthCredential: Storable {
     }
     
     // Require refresh if within 5 minutes of expiration
-    var requiresRefresh: Bool { Date(timeIntervalSinceNow: 60 * 5) > expiration ?? Date() }
+    var requiresRefresh: Bool { false }
     
     var header: String {
         return "\(tokenType.capitalized) \(accessToken)"
