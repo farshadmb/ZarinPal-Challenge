@@ -1,10 +1,7 @@
 PODS:
   - Alamofire (5.2.1)
-  - AutoGraph (0.1.15):
+  - AutoGraph (0.13.0):
     - Alamofire
-    - Crust
-    - JSONValueRX
-  - Crust (0.13.0):
     - JSONValueRX (~> 7.0.0)
   - JSONValueRX (7.0.0)
   - KeychainAccess (4.2.0)
@@ -24,7 +21,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - AutoGraph
+  - AutoGraph (from `https://github.com/farshadmb/AutoGraph.git`)
   - KeychainAccess
   - Kingfisher
   - RxAlamofire
@@ -35,8 +32,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
-    - AutoGraph
-    - Crust
     - JSONValueRX
     - KeychainAccess
     - Kingfisher
@@ -45,10 +40,18 @@ SPEC REPOS:
     - RxSwift
     - RxTest
 
+EXTERNAL SOURCES:
+  AutoGraph:
+    :git: https://github.com/farshadmb/AutoGraph.git
+
+CHECKOUT OPTIONS:
+  AutoGraph:
+    :commit: fb63aa9f4fe1145866da9a0b115876916ab9bca8
+    :git: https://github.com/farshadmb/AutoGraph.git
+
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
-  AutoGraph: 2533f54d47f008e3f6038c9218d44c47b7de650e
-  Crust: 3fda8f58faa984fd99b3eacb54327c0519c15aa9
+  AutoGraph: 0df8f926162204c30c0c34abc46a378643a41394
   JSONValueRX: ba7d7e7a2e4359d135e0b5bc3ad36a3acc67f030
   KeychainAccess: 3f760109aa99b05d0f231e28b22642da7153e38a
   Kingfisher: 7b64389a43139c903ec434788344c288217c792d
@@ -57,6 +60,6 @@ SPEC CHECKSUMS:
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   RxTest: 711632d5644dffbeb62c936a521b5b008a1e1faa
 
-PODFILE CHECKSUM: 5b9ef85c68ad423b3262cf28c8ec42b26d21c656
+PODFILE CHECKSUM: 8c8454106c69153332fa9e0d04ba52fb91fec444
 
 COCOAPODS: 1.9.3

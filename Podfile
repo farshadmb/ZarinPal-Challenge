@@ -9,7 +9,7 @@ target 'ZarinPal-Challenge' do
   pod 'Kingfisher'
   pod 'RxAlamofire'
   pod 'KeychainAccess'
-  pod 'AutoGraph'
+  pod 'AutoGraph', :git => 'https://github.com/farshadmb/AutoGraph.git'
   
   # Pods for ZarinPal-Challenge
 
@@ -25,5 +25,7 @@ target 'ZarinPal-Challenge' do
     pod 'RxBlocking'
     # Pods for testing
   end
+  
+  
 
 end
