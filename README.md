@@ -28,3 +28,19 @@ ZarinPal-Challenge is a Swift and SwiftUI client App for represent User GitHub R
    
 - Step 4: 
     Run and enjoy the app.
+    
+## Technology use in this project
+* SwiftUI  
+* Combine 
+* RxSwift 
+* Clean Code 
+* Clean Arch
+* Modern MVVM 
+
+
+## - Gitwokflow 
+#1 PR Presentation Layer into Develop 
+#2 PR Data Layer into Develop
+#3  PR Domain or Repository Layer into Develop 
+#4 PR ViewModel Layer 
+#5 PR Develop to Master
