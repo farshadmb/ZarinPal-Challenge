@@ -9,15 +9,20 @@ target 'ZarinPal-Challenge' do
   pod 'Kingfisher'
   pod 'RxAlamofire'
   pod 'KeychainAccess'
+  pod 'AutoGraph'
   
   # Pods for ZarinPal-Challenge
 
   target 'ZarinPal-ChallengeTests' do
     inherit! :search_paths
+    pod 'RxTest'
+    pod 'RxBlocking'
     # Pods for testing
   end
 
   target 'ZarinPal-ChallengeUITests' do
+    pod 'RxTest'
+    pod 'RxBlocking'
     # Pods for testing
   end
 

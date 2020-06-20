@@ -208,10 +208,10 @@
 		F82103B92499697B00B1A211 /* ZarinPal-Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				F86A2115249A476900C8AE69 /* Repositories */,
 				F85513C22499ED50006F309D /* Constant */,
 				F875B8D024996B420052C1DC /* Views */,
 				F85513B92499E069006F309D /* Models */,
+				F86A2115249A476900C8AE69 /* Repositories */,
 				F85513B82499D136006F309D /* Service */,
 				F82103BA2499697B00B1A211 /* AppDelegate.swift */,
 				F82103C02499697D00B1A211 /* Assets.xcassets */,
@@ -384,6 +384,7 @@
 				F82103C92499697D00B1A211 /* Sources */,
 				F82103CA2499697D00B1A211 /* Frameworks */,
 				F82103CB2499697D00B1A211 /* Resources */,
+				2D9761E982B2F1B9F58B004B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -523,6 +524,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D9761E982B2F1B9F58B004B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-ChallengeTests/Pods-ZarinPal-ChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-ChallengeTests/Pods-ZarinPal-ChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZarinPal-ChallengeTests/Pods-ZarinPal-ChallengeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		56158881A1AABA00406DC675 /* [CP] Check Pods Manifest.lock */ = {
