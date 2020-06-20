@@ -46,7 +46,7 @@ final class GitHubUserRepository : BaseRepository, GitHubUserRepositoryUseCases 
         self.pageSize = last
         
         return fetchRespositories(last:pageSize,
-                                  cursor: lastPage?.endCursor,
+                                  cursor: lastPage?.startCursor,
                                   networkService: network)
         
     }
@@ -59,7 +59,7 @@ final class GitHubUserRepository : BaseRepository, GitHubUserRepositoryUseCases 
         }
         
         return fetchRespositories(last:self.pageSize,
-                                  cursor: lastPage.endCursor,
+                                  cursor: lastPage.startCursor,
                                   networkService: network)
     }
     

@@ -13,8 +13,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-    let authentication = AuthenticationService()
-
+    
+    let appViewModel = AppViewModel(authentication: AppDIContainer.authenticationUseCases)
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
@@ -24,22 +25,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         print(#function,connectionOptions)
         
-        var items = [RepositoryData]()
-        let fakeBranche = RepositoryData.BranchData(title: "Branch", createdDate: Date(timeIntervalSinceNow: -100), updateDate: Date())
-        let fakeIssue = RepositoryData.IssueData(number: "1", title: "Issue", date: Date(timeIntervalSinceNow: -50), description: "Issue Description")
-        let fakePR = RepositoryData.PullRequestData(number: "#2", title: "Issue", date: Date(timeIntervalSinceNow: -40), description: "PR Description")
         
-        for i in 0...20 {
-            
-            var respository = RepositoryData(title: "Repo Name \(i)", description: i % 2 == 0 ? nil : "Repo Desc")
-            respository.branches = i % 3 == 0 ? Array(repeating:fakeBranche , count: 5) : []
-            respository.pullRequests = i % 4 == 0 ? Array(repeating: fakePR, count: 5) : []
-            respository.issues = i % 5 == 0 ? Array(repeating: fakeIssue, count: 5) : []
-            
-            items.append(respository)
-        }
+//        AppDIContainer.secureStorage.clearAll()
         
-        let contentView = UserRepositoryListView(items: items)
+        
+        let contentView = AppContainerView(viewModel: appViewModel)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -49,9 +39,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.makeKeyAndVisible()
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
-            _ = self.authentication.buildAuthentication(credential: AppConfig.clientCredetianl)
-        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -100,7 +87,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 .rootViewController?.present(alert, animated: true, completion: nil)
             
         }else if let code = queryItems?.first(where: { $0.name == "code"}), let codeValue = code.value  {
-            print("accessCode =>",codeValue)
+            appViewModel.send(event: .recieved(code: codeValue))
         }
     }
 

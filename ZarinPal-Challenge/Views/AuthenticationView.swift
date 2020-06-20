@@ -7,8 +7,12 @@
 //
 
 import SwiftUI
+import Combine
+import Foundation
 
 struct AuthenticationView: View  {
+    
+    @ObservedObject var viewModel : AuthenticationViewModel
     
     var body : some View {
         VStack(spacing: 16) {
@@ -23,7 +27,7 @@ struct AuthenticationView: View  {
                 .font(.body)
                 .fontWeight(.semibold)
             Button(action: {
-                UIApplication.shared.openURL(URL(string: "https://www.google.com")!)
+                self.viewModel.send(event: .authorize)
             }) {
                 Text("Authenticate")
                     .foregroundColor(.white)
@@ -33,6 +37,12 @@ struct AuthenticationView: View  {
             .background(Color.blue)
             .clipShape(Capsule())
             
+            viewModel.error.map { (error) in
+                Text(error.localizedDescription)
+                    .font(.body)
+                    .fontWeight(.regular)
+            }
+            
             Spacer()
         }
         .padding(16)
@@ -41,6 +51,6 @@ struct AuthenticationView: View  {
 
 struct AuthenticationView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthenticationView()
+        AuthenticationView(viewModel: AuthenticationViewModel(authentication: AppDIContainer.authenticationUseCases))
     }
 }

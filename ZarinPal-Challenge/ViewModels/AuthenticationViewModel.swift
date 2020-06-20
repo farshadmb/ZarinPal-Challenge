@@ -1,5 +1,5 @@
 //
-//  Pagination.swift
+//  AuthenticationViewModel.swift
 //  ZarinPal-Challenge
 //
 //  Created by Farshad Mousalou on 6/20/20.
@@ -8,9 +8,6 @@
 
 import Foundation
 
-struct Pagination : Decodable {
+class AuthenticationViewModel: AppViewModel {
     
-    let startCursor: String?
-    let hasNextPage: Bool
-    let hasPreviousPage: Bool
 }

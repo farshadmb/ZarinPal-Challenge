@@ -6,7 +6,7 @@ target 'ZarinPal-Challenge' do
   use_frameworks!
   pod 'Alamofire'
   pod 'RxSwift'
-  pod 'Kingfisher'
+  pod 'Kingfisher/SwiftUI'
   pod 'RxAlamofire'
   pod 'KeychainAccess'
   pod 'AutoGraph', :git => 'https://github.com/farshadmb/AutoGraph.git'
